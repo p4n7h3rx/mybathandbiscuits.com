@@ -25,7 +25,7 @@ const distPath = path.join(__dirname, 'dist');
 app.use(express.static(distPath));
 
 // Handle SPA routing: serve index.html for all unknown routes
-app.get('*splat', (req, res) => {
+app.get('*', (req, res) => {
     const indexPath = path.join(distPath, 'index.html');
     if (fs.existsSync(indexPath)) {
         res.sendFile(indexPath);
