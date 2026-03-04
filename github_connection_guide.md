@@ -40,10 +40,10 @@ git init
 Connect your local folder to a GitHub repository:
 ```powershell
 # Using SSH (Best for security/speed)
-git remote add origin git@github.com:p4n7h3rx/rainbowpaws-grooming.git
+git remote add origin git@github.com:p4n7h3rx/mybathandbiscuits.com.git
 
 # Using HTTPS (If SSH is not configured)
-git remote add origin https://github.com/p4n7h3rx/rainbowpaws-grooming.git
+git remote add origin https://github.com/p4n7h3rx/mybathandbiscuits.com.git
 ```
 
 ### Verification
@@ -76,7 +76,7 @@ git push -u origin main
 ### Updating Remote URL
 If you move the project or change the owner:
 ```powershell
-git remote set-url origin git@github.com:p4n7h3rx/rainbowpaws-grooming.git
+git remote set-url origin git@github.com:p4n7h3rx/mybathandbiscuits.com.git
 ```
 
 ### Handling Multiple Accounts
