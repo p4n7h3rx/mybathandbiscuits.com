@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    color: #2D2D2D;
+    background-color: #FDF8F0;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  p {
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+
+  ::selection {
+    background-color: #A8C686;
+    color: #FEFCF7;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(254, 252, 247, 0.4);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(58, 58, 58, 0.05);
+  }
+
+  .glass-card-dark {
+    background: rgba(26, 26, 26, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+  }
+
+  .gold-gradient {
+    background: linear-gradient(135deg, #C9A96E 0%, #A8873D 100%);
+  }
+
+  .gold-text {
+    background: linear-gradient(135deg, #C9A96E 0%, #DFC089 50%, #A8873D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-20 xl:px-28;
+  }
+
+  .warm-gradient {
+    background: linear-gradient(180deg, #FDF8F0 0%, #F5E6D3 100%);
+  }
+
+  .blush-gradient {
+    background: linear-gradient(180deg, #FDF8F0 0%, #F5E0D8 50%, #E8C4B8 100%);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-10 py-5 font-sans font-bold text-warm-white text-sm tracking-widest uppercase rounded-full bg-charcoal hover:bg-sage hover:shadow-2xl hover:shadow-sage/20 hover:-translate-y-1 cursor-pointer;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-8 py-4 font-sans font-semibold text-gold text-base rounded-full border-2 border-gold bg-transparent hover:bg-gold hover:text-warm-white hover:scale-105 cursor-pointer;
+    transition: transform 0.3s ease-out, background-color 0.3s ease-out, color 0.3s ease-out;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-6 py-3 font-sans font-medium text-charcoal text-sm rounded-full hover:bg-champagne cursor-pointer;
+    transition: background-color 0.3s ease-out;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    will-change: transform, opacity;
+  }
+
+  .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDF8F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9A96E;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A8873D;
+}
+
+/* Lenis smooth scroll */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Canvas container */
+.canvas-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Ensure 3D canvas covers hero */
+.hero-canvas canvas {
+  display: block;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "mybathandbiscuits",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "chmod +x node_modules/.bin/vite || true && vite build || node node_modules/vite/bin/vite.js build",
+    "preview": "vite preview",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.99.0",
+    "@react-three/fiber": "^8.15.0",
+    "express": "^5.2.1",
+    "framer-motion": "^12.34.3",
+    "gsap": "^3.12.5",
+    "lenis": "^1.0.42",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.4",
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^7.13.0",
+    "sharp": "^0.34.5",
+    "three": "^0.161.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.4"
+  }
+}
