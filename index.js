@@ -1,14 +1,12 @@
-import express from 'express';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import fs from 'fs';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const distPath = path.resolve(__dirname, 'dist');
+const express = require('express');
+const path = require('path');
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Path to the distribution folder
+const distPath = path.resolve(__dirname, 'dist');
 
 // Intensive logging for debugging 503
 app.use((req, res, next) => {
@@ -16,13 +14,12 @@ app.use((req, res, next) => {
     next();
 });
 
-// Direct test route to verify server is active
-app.get('/test-503', (req, res) => {
+// Diagnostic route
+app.get('/test-node', (req, res) => {
     res.json({
-        status: 'Server is reachable',
+        status: 'Server is active',
         nodeVersion: process.version,
         time: new Date().toISOString(),
-        env: process.env.NODE_ENV || 'not set',
         dir: __dirname,
         distExists: fs.existsSync(distPath)
     });
@@ -30,29 +27,30 @@ app.get('/test-503', (req, res) => {
 
 app.get('/health', (req, res) => res.status(200).send('OK'));
 
-// Serve static files
-app.use(express.static(distPath));
+// Serve static files (if dist exists)
+if (fs.existsSync(distPath)) {
+    app.use(express.static(distPath));
+}
 
-// Manual check for dist/index.html to ensure file existence
+// Fallback for SPA
 app.get('*', (req, res) => {
     const indexPath = path.join(distPath, 'index.html');
     if (fs.existsSync(indexPath)) {
         res.sendFile(indexPath);
     } else {
-        console.error(`CRITICAL: dist/index.html not found at ${indexPath}`);
-        res.status(500).send('Production build missing. Please run build.');
+        res.status(200).send(`
+            <body style="background:#1a1a1a;color:#fff;font-family:sans-serif;text-align:center;padding-top:20vh;">
+                <h1>Site is Building</h1>
+                <p>Node.js is running, but the frontend build is not found at: ${distPath}</p>
+                <p>Please run <code>npm run build</code></p>
+            </body>
+        `);
     }
 });
 
-const server = app.listen(PORT, () => {
-    console.log('====================================');
-    console.log('BATH & BISCUITS SERVER NODE.JS');
-    console.log(`Listening on Port: ${PORT}`);
-    console.log(`Serving Assets: ${distPath}`);
-    console.log('====================================');
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
 
-// Process-level error handling
-process.on('uncaughtException', (err) => console.error('UNCAUGHT EXCEPTION:', err));
-process.on('unhandledRejection', (reason) => console.error('UNHANDLED REJECTION:', reason));
-server.on('error', (err) => console.error('SERVER ERROR:', err));
+process.on('uncaughtException', (err) => console.error('CRITICAL:', err));
+process.on('unhandledRejection', (reason) => console.error('REJECTION:', reason));

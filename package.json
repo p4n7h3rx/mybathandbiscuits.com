@@ -2,7 +2,6 @@
   "name": "mybathandbiscuits",
   "private": true,
   "version": "1.0.0",
-  "type": "module",
   "engines": {
     "node": ">=20.0.0"
   },
@@ -16,7 +15,7 @@
   "dependencies": {
     "@react-three/drei": "^9.99.0",
     "@react-three/fiber": "^8.15.0",
-    "express": "^5.2.1",
+    "express": "^4.18.2",
     "framer-motion": "^12.34.3",
     "gsap": "^3.12.5",
     "lenis": "^1.0.42",
