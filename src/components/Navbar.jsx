@@ -96,11 +96,11 @@ export default function Navbar() {
                         onClick={() => setIsMobileOpen(false)}
                         className="flex items-center gap-4 cursor-pointer group magnetic"
                     >
-                        <div className="w-16 h-16 rounded-full overflow-hidden transition-transform duration-500 group-hover:scale-110 shadow-2xl border-2 border-white/40 bg-white p-1.5">
+                        <div className="w-20 h-20 overflow-hidden transition-transform duration-500 group-hover:scale-110 drop-shadow-2xl flex items-center justify-center p-1">
                             <img
-                                src="/images/Logo.webp"
-                                alt="B"
-                                className="w-full h-full object-cover rounded-full"
+                                src="/images/logo.png"
+                                alt="Bath & Biscuits Logo"
+                                className="w-full h-full object-contain"
                             />
                         </div>
                         <div className="hidden sm:block">

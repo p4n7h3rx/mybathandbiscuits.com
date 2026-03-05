@@ -30,6 +30,11 @@ export default function Footer() {
                     {/* Brand Meta */}
                     <div className="md:col-span-5">
                         <div className="mb-10">
+                            <img
+                                src="/images/logo.png"
+                                alt="Logo"
+                                className="h-16 w-auto mb-6 opacity-80 hover:opacity-100 transition-opacity"
+                            />
                             <span className="font-serif font-black text-3xl text-white block mb-2 tracking-tighter">
                                 Bath & Biscuits
                             </span>
