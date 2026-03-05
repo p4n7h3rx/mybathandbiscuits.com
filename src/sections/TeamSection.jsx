@@ -6,7 +6,7 @@ const TEAM_MEMBERS = [
         role: 'Owner & Lead Groomer',
         credentials: 'RVT · Certified Dog & Cat Groomer',
         bio: 'Registered Veterinary Technician with 15+ years of clinical and artisan grooming experience. Ohio State alumna.',
-        image: '/images/Danielle.webp'
+        image: '/images/team/Danielle.webp'
     },
     {
         name: 'Ash Butcher',
@@ -20,7 +20,7 @@ const TEAM_MEMBERS = [
         role: 'Dog Groomer & Stylist',
         credentials: 'Master Stylist',
         bio: 'Expert in breed-specific precision and creative styling, transforming every pet into a Granville standout.',
-        image: '/images/team/Maureen-Cantlebary-Dog Groomer & Stylist.webp'
+        image: '/images/team/Maureen.webp'
     },
     {
         name: 'Shay Roberts',
