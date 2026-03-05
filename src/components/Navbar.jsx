@@ -94,22 +94,14 @@ export default function Navbar() {
                         ref={logoRef}
                         to="/"
                         onClick={() => setIsMobileOpen(false)}
-                        className="flex items-center gap-4 cursor-pointer group magnetic"
+                        className="flex items-center cursor-pointer group magnetic"
                     >
-                        <div className="w-20 h-20 overflow-hidden transition-transform duration-500 group-hover:scale-110 drop-shadow-2xl flex items-center justify-center p-1">
+                        <div className="h-12 md:h-16 w-auto overflow-hidden transition-transform duration-500 group-hover:scale-105 drop-shadow-2xl flex items-center">
                             <img
-                                src="/images/logo.png"
-                                alt="Bath & Biscuits Logo"
-                                className="w-full h-full object-contain"
+                                src="/images/Logo.png"
+                                alt="Bath & Biscuits"
+                                className="h-full w-auto object-contain"
                             />
-                        </div>
-                        <div className="hidden sm:block">
-                            <span className={`font-serif font-black text-xl leading-none block tracking-tighter transition-colors duration-700 ${activeScrolled ? 'text-charcoal' : 'text-warm-white'}`}>
-                                Bath & Biscuits
-                            </span>
-                            <span className={`font-sans text-[9px] font-black tracking-[0.2em] uppercase leading-none mt-1 block transition-colors duration-700 ${activeScrolled ? 'text-sage' : 'text-sage/90'}`}>
-                                Pet Salon & Boutique
-                            </span>
                         </div>
                     </Link>
 
