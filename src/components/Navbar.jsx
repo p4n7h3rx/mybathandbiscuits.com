@@ -76,37 +76,43 @@ export default function Navbar() {
 
     return (
         <header
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${isHidden ? '-translate-y-full' : 'translate-y-0'
-                }`}
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${isHidden ? '-translate-y-full opacity-0' : 'translate-y-0 opacity-100'} ${activeScrolled ? 'pt-2 md:pt-4' : 'pt-6 md:pt-8'}`}
         >
             <nav
-                className={`transition-all duration-700 mx-auto w-full ${activeScrolled
-                    ? 'max-w-6xl mt-0 lg:mt-6'
-                    : 'max-w-7xl mt-6'
-                    }`}
+                className={`transition-all duration-700 mx-auto px-4 ${activeScrolled ? 'max-w-5xl' : 'max-w-7xl'}`}
             >
-                <div className={`px-6 md:px-8 py-6 md:py-5 flex items-center justify-between transition-all duration-700 ${activeScrolled
-                    ? 'glass-card !bg-white/70 shadow-2xl shadow-charcoal/5 border-white/50 backdrop-blur-3xl rounded-none lg:rounded-[2rem]'
+                <div className={`flex items-center justify-between transition-all duration-700 nav-pill ${activeScrolled
+                    ? 'glass-card shadow-2xl !bg-white/90'
                     : 'bg-transparent border-transparent'
                     }`}>
-                    {/* Logo */}
+                    {/* Logo Area */}
                     <Link
                         ref={logoRef}
                         to="/"
                         onClick={() => setIsMobileOpen(false)}
-                        className="flex items-center cursor-pointer group magnetic"
+                        className="flex items-center gap-3 md:gap-4 cursor-pointer group magnetic pr-4"
                     >
-                        <div className="h-12 md:h-16 w-auto overflow-hidden transition-transform duration-500 group-hover:scale-105 drop-shadow-2xl flex items-center">
-                            <img
-                                src="/images/Logo.png"
-                                alt="Bath & Biscuits"
-                                className="h-full w-auto object-contain"
-                            />
+                        <div className={`transition-all duration-500 flex items-center justify-center overflow-hidden rounded-xl shadow-2xl ring-1 ring-white/20 ${activeScrolled ? 'h-10 md:h-12' : 'h-14 md:h-16'}`}>
+                            <div className="h-full aspect-square bg-charcoal p-1.5 flex items-center justify-center">
+                                <img
+                                    src="/images/Logo.png"
+                                    alt="Bath & Biscuits"
+                                    className="h-full w-full object-contain"
+                                />
+                            </div>
+                        </div>
+                        <div className="flex flex-col">
+                            <span className={`font-serif font-black transition-all duration-700 tracking-tight block leading-none ${activeScrolled ? 'text-lg text-charcoal' : 'text-xl text-warm-white'}`}>
+                                Bath & Biscuits
+                            </span>
+                            <span className={`font-sans font-black uppercase tracking-[0.3em] transition-all duration-700 block mt-1.5 whitespace-nowrap ${activeScrolled ? 'text-[8px] text-sage' : 'text-[9px] text-sage/90'}`}>
+                                Granville · Ohio
+                            </span>
                         </div>
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden lg:flex items-center gap-10">
+                    <div className="hidden lg:flex items-center gap-8 xl:gap-12">
                         {NAV_LINKS.map((link) => (
                             link.type === 'external' ? (
                                 <a
@@ -114,10 +120,7 @@ export default function Navbar() {
                                     href={link.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className={`font-sans text-[11px] font-black uppercase tracking-[0.25em] transition-all duration-300 cursor-pointer ${activeScrolled
-                                        ? 'text-charcoal/50 hover:text-charcoal'
-                                        : 'text-warm-white/70 hover:text-warm-white'
-                                        }`}
+                                    className={`nav-link ${activeScrolled ? 'text-charcoal/60 hover:text-charcoal' : 'text-warm-white/70 hover:text-warm-white'}`}
                                 >
                                     {link.name}
                                 </a>
@@ -126,10 +129,7 @@ export default function Navbar() {
                                     key={link.name}
                                     to={link.href}
                                     onClick={(e) => handleNavClick(e, link)}
-                                    className={`font-sans text-[11px] font-black uppercase tracking-[0.25em] transition-all duration-300 cursor-pointer ${activeScrolled
-                                        ? 'text-charcoal/50 hover:text-charcoal'
-                                        : 'text-warm-white/70 hover:text-warm-white'
-                                        }`}
+                                    className={`nav-link ${activeScrolled ? 'text-charcoal/60 hover:text-charcoal' : 'text-warm-white/70 hover:text-warm-white'}`}
                                 >
                                     {link.name}
                                 </Link>
@@ -137,26 +137,28 @@ export default function Navbar() {
                         ))}
                     </div>
 
-                    <div className="hidden lg:block">
-                        <a
-                            ref={bookBtnRef}
-                            href={BOOKING_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn-primary !px-8 !py-4 magnetic"
-                        >
-                            Book Salon
-                        </a>
-                    </div>
+                    <div className="flex items-center gap-3">
+                        <div className="hidden sm:block">
+                            <a
+                                ref={bookBtnRef}
+                                href={BOOKING_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`btn-primary magnetic !tracking-[0.2em] shadow-xl ${activeScrolled ? '!px-6 !py-3 !text-[10px]' : '!px-8 !py-4'}`}
+                            >
+                                Book Salon
+                            </a>
+                        </div>
 
-                    {/* Mobile Hamburger */}
-                    <button
-                        onClick={() => setIsMobileOpen(!isMobileOpen)}
-                        className={`lg:hidden p-2 transition-colors cursor-pointer ${activeScrolled || isMobileOpen ? 'text-charcoal' : 'text-warm-white'}`}
-                        aria-label="Toggle menu"
-                    >
-                        {isMobileOpen ? <HiOutlineX size={24} /> : <HiOutlineMenu size={24} />}
-                    </button>
+                        {/* Mobile Hamburger */}
+                        <button
+                            onClick={() => setIsMobileOpen(!isMobileOpen)}
+                            className={`lg:hidden p-3 rounded-full transition-all duration-300 cursor-pointer ${activeScrolled || isMobileOpen ? 'text-charcoal bg-charcoal/5' : 'text-warm-white hover:bg-white/10'}`}
+                            aria-label="Toggle menu"
+                        >
+                            {isMobileOpen ? <HiOutlineX size={24} /> : <HiOutlineMenu size={24} />}
+                        </button>
+                    </div>
                 </div>
             </nav>
 
