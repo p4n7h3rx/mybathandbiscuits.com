@@ -31,16 +31,10 @@ export default function Footer() {
                     <div className="md:col-span-5">
                         <div className="mb-10">
                             <img
-                                src="/images/logo.png"
-                                alt="Logo"
-                                className="h-16 w-auto mb-6 opacity-80 hover:opacity-100 transition-opacity"
+                                src="/images/Logo.png"
+                                alt="Bath & Biscuits"
+                                className="h-20 w-auto mb-6 opacity-90 transition-opacity"
                             />
-                            <span className="font-serif font-black text-3xl text-white block mb-2 tracking-tighter">
-                                Bath & Biscuits
-                            </span>
-                            <span className="font-sans text-[10px] font-black text-sage tracking-[0.4em] uppercase block">
-                                Pet Salon & Boutique
-                            </span>
                         </div>
                         <p className="font-sans text-lg text-white/50 leading-relaxed max-w-sm mb-12">
                             Pioneering a higher standard of pet care in Ohio. Artisan grooming, clinical therapy, and curated essentials.
