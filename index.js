@@ -48,17 +48,29 @@ app.get('*', (req, res) => {
     }
 });
 
-const server = app.listen(PORT, () => {
-    console.log(`-----------------------------------------------`);
-    console.log(`Server started successfully`);
-    console.log(`Port: ${PORT}`);
-    console.log(`Time: ${new Date().toISOString()}`);
-    console.log(`Directory: ${__dirname}`);
-    console.log(`Serving from: ${distPath}`);
-    console.log(`-----------------------------------------------`);
+const server = app.listen(PORT, '0.0.0.0', () => {
+    console.log(`===============================================`);
+    console.log(`PRODUCTION SERVER STARTED`);
+    console.log(`Timestamp : ${new Date().toISOString()}`);
+    console.log(`Port      : ${PORT}`);
+    console.log(`Dir       : ${__dirname}`);
+    console.log(`Serving   : ${distPath}`);
+    console.log(`===============================================`);
 });
 
-// Basic error handling for the server
+// Handle global errors that might crash the process
+process.on('uncaughtException', (err) => {
+    console.error('CRITICAL: Uncaught Exception:', err);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('CRITICAL: Unhandled Rejection at:', promise, 'reason:', reason);
+});
+
 server.on('error', (error) => {
-    console.error('Server error:', error);
+    if (error.code === 'EADDRINUSE') {
+        console.error(`ERROR: Port ${PORT} is already in use.`);
+    } else {
+        console.error('SERVER ERROR:', error);
+    }
 });
