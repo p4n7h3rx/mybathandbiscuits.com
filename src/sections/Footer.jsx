@@ -30,7 +30,7 @@ export default function Footer() {
                     {/* Brand Meta */}
                     <div className="md:col-span-5">
                         <div className="mb-10">
-                            <div className="h-20 w-20 bg-charcoal rounded-xl p-2 shadow-2xl ring-1 ring-white/10 mb-6 flex items-center justify-center overflow-hidden transition-transform duration-500 hover:scale-105">
+                            <div className="h-20 w-20 bg-charcoal rounded-full p-2 shadow-2xl ring-1 ring-white/10 mb-6 flex items-center justify-center overflow-hidden transition-transform duration-500 hover:scale-105">
                                 <img
                                     src="/images/Logo.png"
                                     alt="Bath & Biscuits"

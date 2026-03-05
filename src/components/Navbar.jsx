@@ -92,7 +92,7 @@ export default function Navbar() {
                         onClick={() => setIsMobileOpen(false)}
                         className="flex items-center gap-3 md:gap-4 cursor-pointer group magnetic pr-4"
                     >
-                        <div className={`transition-all duration-500 flex items-center justify-center overflow-hidden rounded-xl shadow-2xl ring-1 ring-white/20 ${activeScrolled ? 'h-10 md:h-12' : 'h-14 md:h-16'}`}>
+                        <div className={`transition-all duration-500 flex items-center justify-center overflow-hidden rounded-full shadow-2xl ring-1 ring-white/20 ${activeScrolled ? 'h-10 md:h-12' : 'h-14 md:h-16'}`}>
                             <div className="h-full aspect-square bg-charcoal p-1.5 flex items-center justify-center">
                                 <img
                                     src="/images/Logo.png"
