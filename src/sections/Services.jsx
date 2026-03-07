@@ -10,15 +10,15 @@ const SERVICES = [
         id: 'luxury-grooming',
         icon: HiScissors,
         title: 'Luxury Grooming',
-        subtitle: 'Artisan Styling & Clinical Care',
+        subtitle: 'Thoughtful Styling & Gentle Care',
         image: '/images/Grooming-1.webp',
         description:
-            'A one-on-one sanctuary where clinical safety meets master artistry. Every session is a bespoke experience tailored to your pet\'s unique physiology and emotional well-being.',
+            'A quiet, comfortable space where experienced hands and gentle handling come together. Every grooming session is tailored to your pet’s coat, comfort level, and individual needs.',
         features: [
             'HydroLux™ Therapeutic Bathing',
             'Elite Breed-Standard Styling',
-            'Luxury Precision Pawdicures',
-            'Revitalizing Facial Therapy',
+            'Luxury Bubble Pawdicures',
+            'Soothing Facial Treatment',
             'Advanced Deshedding Treatment',
             'Signature Finishing Spritz',
         ],
@@ -29,7 +29,7 @@ const SERVICES = [
         id: 'theraclean',
         icon: HiSparkles,
         title: 'Thera-Clean® Microbubble Spa',
-        subtitle: 'Deep Cleanse for Skin Wellness',
+        subtitle: 'Deep Cleanse for a Healthy Coat',
         image: '/images/Grooming-spray-1.webp',
         description:
             'The industry gold standard for skin health. Using only water and billions of microscopic bubbles, we penetrate deep into pores to eliminate allergens and odors without harsh chemicals.',
@@ -49,16 +49,16 @@ const SERVICES = [
         id: 'cat-grooming',
         icon: HiHeart,
         title: 'Feline Specialization',
-        subtitle: 'Calm, Expert-Led Cat Artistry',
+        subtitle: 'Calm, Expert-Led Cat Care',
         image: '/images/cats.webp',
         description:
             'Our certified feline specialists provide a quiet, stress-free environment designed exclusively for the delicate needs of cats. From master lion cuts to therapeutic bathing, your cat is in expert hands.',
         features: [
-            'Certified Feline Master Groomers',
+            'Experienced Cat Groomers',
             'Exclusive Cat-Only Quiet Zone',
-            'Bespoke Lion Cuts & De-matting',
+            'Comfortable Lion Cuts & De-matting',
             'Stress-Reduced Hydro Bathing',
-            'Clinical Coat Assessments',
+            'Coat & Skin Checks',
             'Gentle Claw & Ear Wellness',
         ],
         badges: ['Feline Safety Certified', 'Master Groomers'],
@@ -117,7 +117,7 @@ export default function Services() {
                                 <span className="text-sage italic font-medium">In Every Detail.</span>
                             </h2>
                             <p className="font-sans text-lg md:text-xl text-slate max-w-xl leading-relaxed opacity-80">
-                                Clinical precision meets artisanal luxury. We've defined a standard of care that prioritizes your pet's long-term wellness.
+                                Where experienced hands and thoughtful care come together. We’ve defined a standard of grooming that prioritizes your pet’s comfort and happiness.
                             </p>
                             <div className="mt-10 md:mt-16 flex items-center gap-6">
                                 <div className="flex -space-x-3">

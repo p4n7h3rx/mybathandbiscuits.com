@@ -51,10 +51,10 @@ export default function Community() {
                         </h2>
                         <div className="space-y-6 font-sans text-lg text-slate leading-relaxed mb-12">
                             <p>
-                                At Bath & Biscuits, our commitment to animals extends far beyond our salon doors. We are dedicated supporters of local animal rescue missions.
+                                At Bath & Biscuits, our love for animals extends far beyond our salon doors. We are dedicated supporters of local animal rescue missions.
                             </p>
                             <p>
-                                Specifically, we work closely with <span className="text-charcoal font-bold underline decoration-sage/30">Whiskers Animal Rescue of Ohio</span>, focusing on the rehabilitation and rehoming of cats. Our founder Danielle and her husband Mike foster kittens throughout the year, providing a safe haven before they find their forever homes.
+                                We work closely with <span className="text-charcoal font-bold underline decoration-sage/30">Whiskers Animal Rescue of Ohio</span>, focusing on the rehabilitation and rehoming of cats. Our founder Danielle and her husband Mike foster kittens throughout the year, providing a safe haven before they find their forever homes.
                             </p>
                         </div>
 
@@ -65,7 +65,7 @@ export default function Community() {
                             </div>
                             <div>
                                 <h4 className="font-serif font-bold text-2xl text-charcoal mb-2">Local Events</h4>
-                                <p className="font-sans text-sm text-slate opacity-60">Sponsoring and participating in Granville's 4th of July celebrations.</p>
+                                <p className="font-sans text-sm text-slate opacity-60">Sponsoring and participating in community-centered celebrations.</p>
                             </div>
                         </div>
                     </div>

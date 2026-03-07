@@ -4,38 +4,45 @@ const TEAM_MEMBERS = [
     {
         name: 'Danielle Wilson',
         role: 'Owner & Lead Groomer',
-        credentials: 'RVT · Certified Dog & Cat Groomer',
-        bio: 'Registered Veterinary Technician with 15+ years of clinical and artisan grooming experience. Ohio State alumna.',
+        credentials: 'RVT · Dog & Cat Groomer',
+        bio: 'A Registered Veterinary Technician with over 15 years of experience in both clinical care and professional grooming. Danielle blends her deep medical knowledge with a gentle, hands-on approach to keep every pet healthy and happy.',
         image: '/images/team/Danielle.webp'
+    },
+    {
+        name: 'Allison Walters',
+        role: 'Canine Stylist',
+        credentials: 'Professional Stylist',
+        bio: 'With an eye for detail and a calm, patient touch, Allison specializes in creating looks that make pets feel as good as they look. She loves getting to know the unique personality of every dog that visits her table.',
+        image: '/images/team/Danielle.webp' // Placeholder: Using Danielle's optimized image until Allison's is provided
     },
     {
         name: 'Ash Butcher',
         role: 'General Manager',
-        credentials: 'Hospitality Specialist',
-        bio: 'Ensuring every pet and parent feels the unique boutique charm of Bath & Biscuits from the moment they enter.',
+        credentials: 'Community Relations',
+        bio: 'Ash ensures that every pet and parent feels right at home from the moment they walk through our doors. She’s dedicated to making every visit to Bath & Biscuits a warm and welcoming experience.',
         image: '/images/team/Ash-Butcher-General-Manager.webp'
     },
     {
         name: 'Maureen Cantlebary',
         role: 'Dog Groomer & Stylist',
-        credentials: 'Master Stylist',
-        bio: 'Expert in breed-specific precision and creative styling, transforming every pet into a Granville standout.',
+        credentials: 'Expert Stylist',
+        bio: 'Maureen brings years of experience in breed-specific styling and a genuine love for her craft. She focuses on thoughtful, individual care to bring out the very best in every pet she grooms.',
         image: '/images/team/Maureen.webp'
     },
     {
         name: 'Shay Roberts',
         role: 'Salon Supervisor',
-        credentials: 'Operational Lead',
-        bio: 'Managing the rhythm of the salon to ensure a calm, low-stress environment for every high-end spa session.',
+        credentials: 'Team Lead',
+        bio: 'Shay keeps the salon running smoothly, creating a calm and low-stress environment where pets can truly relax. Her focus is always on the comfort and well-being of every furry guest.',
         image: '/images/team/Shay-Roberts-Salon-Supervisor.webp'
     },
     {
         name: 'Kaitlyn Lorenz',
         role: 'Bather & Grooming Assistant',
-        credentials: 'Hydro-Massage Specialist',
-        bio: 'Master of the clinical-clean, ensuring every pet receives the thorough care foundation they deserve.',
+        credentials: 'Comfort Specialist',
+        bio: 'Kaitlyn ensures every pet’s grooming journey starts with a thorough, gentle, and relaxing bath. She’s passionate about providing the foundational care that keeps pets feeling clean and refreshed.',
         image: '/images/team/Kaitlyn-Lorenz-Bather & Grooming Assistant.webp'
-    }
+    },
 ]
 
 export default function TeamSection() {
@@ -62,7 +69,7 @@ export default function TeamSection() {
                         Meet Your Pet's <br /> <span className="text-sage italic font-medium">Wellness Partners.</span>
                     </h2>
                     <p className="font-sans text-slate max-w-2xl mx-auto leading-relaxed">
-                        Our team combines clinical veterinary expertise with artisan passion to deliver Granville's most sophisticated pet grooming experience.
+                        Our team combines years of experience with a genuine love for pets to deliver the most thoughtful grooming experience in Licking County.
                     </p>
                 </div>
 

@@ -35,9 +35,9 @@ function hasWebGL() {
 
 export default function Hero({
     badge = "Since 2009 · Granville",
-    titleLine1 = "Elevate Your Pet's",
-    titleLine2 = "Standard of Care",
-    subtitle = "A curated grooming experience where clinical expertise meets artisan boutique charm.",
+    titleLine1 = "Professional Grooming for",
+    titleLine2 = "Dogs & Cats in Licking County",
+    subtitle = "Where experienced hands, gentle handling, and thoughtful care come together to keep pets healthy, comfortable, and looking their best.",
     videoSrc = "/images/Video-1.mp4",
     primaryCTA = { text: "Book Appointment", href: "https://pawpartner.com/pz/book?p=237080" },
     secondaryCTA = { text: "Explore Services", href: "#services", onClick: null }

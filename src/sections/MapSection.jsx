@@ -23,7 +23,7 @@ export default function MapSection() {
                                 <FaGoogle size={20} />
                                 <span className="font-sans text-[10px] font-black uppercase tracking-widest">Google Business</span>
                             </div>
-                            <p className="font-serif italic text-lg text-charcoal mb-4">"The elite pet destination in Granville."</p>
+                            <p className="font-serif italic text-lg text-charcoal mb-4">"The place pets love to visit in Newark."</p>
                             <div className="flex gap-1">
                                 {[1, 2, 3, 4, 5].map(i => (
                                     <HiStar key={i} className="text-gold" size={14} />
@@ -36,7 +36,7 @@ export default function MapSection() {
                     <div className="flex flex-col justify-center p-4 md:p-8">
                         <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-8 block">Find Us</span>
                         <h2 className="font-serif font-black text-4xl md:text-6xl text-charcoal mb-10 leading-tight">
-                            At the Heart <br /> of <span className="text-sage italic font-medium">Granville.</span>
+                            At the Heart <br /> of <span className="text-sage italic font-medium">Newark.</span>
                         </h2>
 
                         <div className="space-y-10 mb-12">
@@ -46,7 +46,7 @@ export default function MapSection() {
                                 </div>
                                 <div>
                                     <span className="block font-sans text-[10px] font-black text-charcoal/20 uppercase tracking-widest mb-1 text-left">The Boutique</span>
-                                    <p className="font-serif text-xl text-charcoal">111 Union St, Granville, OH 43023</p>
+                                    <p className="font-serif text-xl text-charcoal">75 Westgate Dr NE, Newark, OH 43055</p>
                                 </div>
                             </div>
 

@@ -2,20 +2,20 @@ import { HiClipboardCheck, HiBeaker, HiSparkles, HiScissors, HiHeart } from 'rea
 
 const STEPS = [
     {
-        title: 'Clinical Evaluation',
-        text: 'Our RVT-led team performs a comprehensive skin and coat health assessment before every session.',
+        title: 'Coat & Skin Check',
+        text: 'We perform a thorough coat and skin check at the start of every appointment to ensure your pet is comfortable and ready for grooming.',
         icon: HiClipboardCheck,
         image: '/images/IMG_9234.webp'
     },
     {
-        title: 'Hydro-Massage Therapy',
-        text: 'A deep-cleansing organic bath using therapeutic water pressure to relax muscle tension and revitalize skin.',
+        title: 'Relaxing Bath',
+        text: 'A deep-cleansing organic bath using gentle water pressure to wash away stress and revitalize your pet’s skin.',
         icon: HiBeaker,
         image: '/images/TheraCleanMicroBubblesExample.webp'
     },
     {
-        title: 'Artisan Styling',
-        text: 'Master groomers apply hand-scissoring and elite breed-standard styling tailored to your pet\'s anatomy.',
+        title: 'Individual Styling',
+        text: 'Our experienced stylists use gentle handling and careful scissoring to give your pet a look that’s tailored just for them.',
         icon: HiScissors,
         image: '/images/Grooming-1.webp'
     },
@@ -34,7 +34,7 @@ export default function GroomingProcess() {
                 <div className="text-center mb-24 max-w-3xl mx-auto">
                     <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-8 block">The Method</span>
                     <h2 className="font-serif font-black text-4xl md:text-6xl text-charcoal mb-8 leading-tight">The Process of <span className="text-sage italic font-medium">Perfection.</span></h2>
-                    <p className="font-sans text-lg text-slate leading-relaxed">We've defined a clinical-standard workflow that ensures safety, comfort, and masterful results for every pet in our care.</p>
+                    <p className="font-sans text-lg text-slate leading-relaxed">We’ve developed a thoughtful workflow that prioritizes your pet’s comfort and happiness throughout their visit.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

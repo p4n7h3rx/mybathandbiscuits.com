@@ -39,7 +39,7 @@ export default function Footer() {
                             </div>
                         </div>
                         <p className="font-sans text-lg text-white/50 leading-relaxed max-w-sm mb-12">
-                            Pioneering a higher standard of pet care in Ohio. Artisan grooming, clinical therapy, and curated essentials.
+                            Gentle, experienced grooming for the pets of Licking County. Where thoughtful care meets a love for what we do.
                         </p>
                         <div className="flex gap-6">
                             <a
@@ -116,7 +116,7 @@ export default function Footer() {
                             <div>
                                 <span className="block font-sans text-[10px] font-black text-white/20 uppercase tracking-widest mb-2">Location</span>
                                 <a href="https://maps.app.goo.gl/VrhQ2gPsB4kPxgLn7" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
-                                    111 Union St · Granville, OH
+                                    75 Westgate Dr NE · Newark, OH
                                 </a>
                             </div>
                             <div>
