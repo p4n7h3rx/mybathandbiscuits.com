@@ -25,7 +25,7 @@ export default function Community() {
                         <div className={`aspect-square rounded-[3rem] overflow-hidden shadow-2xl transition-all duration-1000 ${isVisible ? 'opacity-100 scale-100 rotate-0' : 'opacity-0 scale-95 -rotate-2'}`}>
                             <img
                                 src="/images/cats.webp"
-                                alt="Rescued cat in care"
+                                alt="Cat Rescue Newark Ohio - Bath & Biscuits Community"
                                 className="w-full h-full object-cover"
                             />
                         </div>

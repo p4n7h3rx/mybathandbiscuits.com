@@ -20,7 +20,7 @@ const CATEGORIES = [
     {
         icon: HiGift,
         title: 'Premium Products',
-        description: 'Curated grooming essentials, stylish collars, interactive toys, and locally-made artisan finds.',
+        description: 'Curated grooming essentials, stylish collars, interactive toys, and locally-made finds.',
     },
 ]
 
@@ -60,11 +60,11 @@ export default function Bakery() {
                         {/* Decorative background shape */}
                         <div className="absolute -top-12 -left-12 w-64 h-64 bg-charcoal/5 rounded-full blur-3xl -z-10" />
 
-                        {/* Floating Artisan Quote */}
+                        {/* Floating Boutique Quote */}
                         <div className="absolute -bottom-6 -right-2 md:-bottom-10 md:-right-6 glass-card p-6 md:p-10 border border-white max-w-[200px] md:max-w-xs shadow-2xl animate-float">
                             <span className="text-3xl md:text-4xl text-sage font-serif block mb-2 md:mb-4">“</span>
                             <p className="font-serif italic text-base md:text-lg text-charcoal leading-snug">
-                                Artisan treats baked with love, for the pets we cherish.
+                                Fresh-baked treats made with love, for the pets we cherish.
                             </p>
                         </div>
                     </div>
@@ -72,15 +72,15 @@ export default function Bakery() {
                     {/* Right: Narrative Content */}
                     <div className={`animate-on-scroll ${isVisible ? 'is-visible' : ''}`}>
                         <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-8 block">
-                            The Artisan Boutique
+                            Our Boutique
                         </span>
                         <h2 className="font-serif font-black text-4xl sm:text-5xl md:text-6xl text-charcoal mb-8 leading-[0.9] tracking-tighter">
-                            Hand-Baked <br />
-                            <span className="text-sage italic font-medium text-3xl sm:text-4xl md:text-6xl">With Love in Granville.</span>
+                            Fresh-Baked <br />
+                            <span className="text-sage italic font-medium text-3xl sm:text-4xl md:text-6xl">With Love in Newark.</span>
                         </h2>
 
                         <p className="font-sans text-xl text-slate mb-12 leading-relaxed">
-                            Our boutique is a curated sanctuary for the discerning pet parent. From human-grade artisan cookies to hand-selected accessories, we source only the finest for your pet.
+                            Our boutique is a curated place for every pet parent. From fresh-baked decorated cookies to hand-selected accessories, we source only the best for your pet.
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -114,7 +114,7 @@ export default function Bakery() {
                             </a>
                             <div className="text-center md:text-left">
                                 <p className="font-sans text-xs font-black text-charcoal/40 uppercase tracking-widest mb-1">
-                                    📍 Granville, Ohio
+                                    📍 Newark, Ohio
                                 </p>
                                 <p className="font-sans text-[10px] font-bold text-sage uppercase tracking-widest">
                                     Fresh Batches Daily
@@ -124,14 +124,14 @@ export default function Bakery() {
                     </div>
                 </div>
 
-                {/* Artisan Gallery Upgrade */}
+                {/* Boutique Gallery Spotlight */}
                 <div className="mt-20 md:mt-32 pt-16 md:pt-24 border-t border-charcoal/5">
                     <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-8 text-center md:text-left">
                         <div className="w-full md:w-auto">
                             <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-6 block">Visual Menu</span>
-                            <h3 className="font-serif font-black text-4xl md:text-5xl text-charcoal">Artisan <span className="text-sage italic font-medium">Spotlight.</span></h3>
+                            <h3 className="font-serif font-black text-4xl md:text-5xl text-charcoal">Boutique <span className="text-sage italic font-medium">Spotlight.</span></h3>
                         </div>
-                        <p className="font-sans text-sm text-slate/50 max-w-xs mx-auto md:mx-0">Each treat is a handcrafted masterpiece, designed for health and celebration.</p>
+                        <p className="font-sans text-sm text-slate/50 max-w-xs mx-auto md:mx-0">Each treat is handcrafted with care, designed for health and celebration.</p>
                     </div>
 
                     <div className="flex flex-wrap justify-center gap-6">

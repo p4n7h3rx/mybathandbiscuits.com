@@ -49,7 +49,7 @@ export default function TheraClean() {
             {/* Immersive Background Narrative */}
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden select-none opacity-5">
                 <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[30rem] font-serif font-black text-charcoal/20 whitespace-nowrap rotate-12">
-                    SCIENCE
+                    WELLNESS
                 </span>
             </div>
 
@@ -58,7 +58,7 @@ export default function TheraClean() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start mb-40">
                     <div className="sticky top-32">
                         <span className="font-sans text-xs font-bold text-sage tracking-[0.4rem] uppercase mb-8 block">
-                            Clinical Therapy
+                            Gentle Therapy
                         </span>
                         <h2 className="font-serif font-black text-3xl sm:text-5xl md:text-8xl text-charcoal mb-8 leading-[0.8] tracking-tighter">
                             The Science <br />
@@ -67,8 +67,8 @@ export default function TheraClean() {
 
                         <div className="space-y-10 mt-12">
                             <p className="font-sans text-xl text-slate max-w-xl leading-relaxed">
-                                Our Thera-Clean® system is a medical-grade sanctuary for your pet's skin.
-                                Using only water and billions of oxygen-rich microbubbles, we reach the microscopic depths where standard grooming simply cannot.
+                                Our Thera-Clean® system is a therapeutic sanctuary for your pet's skin.
+                                Using only water and billions of oxygen-rich microbubbles, we reach the depths where standard grooming simply cannot.
                             </p>
 
                             <div className="flex flex-col gap-8">
@@ -78,7 +78,7 @@ export default function TheraClean() {
                                     </div>
                                     <div>
                                         <h4 className="font-serif font-bold text-xl text-charcoal">RVT Recommended Protocol</h4>
-                                        <p className="font-sans text-sm text-slate mt-1 leading-relaxed">Clinically proven to reduce inflammation and accelerate dermatological healing.</p>
+                                        <p className="font-sans text-sm text-slate mt-1 leading-relaxed">Proven to reduce inflammation and accelerate dermatological healing.</p>
                                     </div>
                                 </div>
                                 <div className={`flex items-start gap-6 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
@@ -95,7 +95,7 @@ export default function TheraClean() {
 
                         <div className="mt-16">
                             <a href="https://pawpartner.com/pz/book?p=237080" className="btn-primary magnetic !px-12">
-                                Reserve Therapy
+                                Reserve Treatment
                             </a>
                         </div>
                     </div>
@@ -116,7 +116,7 @@ export default function TheraClean() {
                             <div className="absolute -top-6 -right-2 md:-top-10 md:-right-6 glass-card p-4 md:p-8 border border-white shadow-2xl max-w-[140px] md:max-w-[200px] animate-float">
                                 <div className="text-sage mb-2 md:mb-4"><HiSparkles size={24} className="md:w-[32px] md:h-[32px]" /></div>
                                 <p className="font-sans text-[8px] md:text-[10px] font-black uppercase tracking-widest text-charcoal/40 leading-tight">
-                                    Trusted By Veterinarians Nationwide
+                                    Trusted By Pet Parents Nationwide
                                 </p>
                             </div>
                         </div>

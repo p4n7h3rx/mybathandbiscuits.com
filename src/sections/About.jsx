@@ -68,13 +68,13 @@ export default function About() {
 
                             <div className="space-y-6 font-sans text-base text-slate leading-relaxed">
                                 <p>
-                                    My name is <span className="text-charcoal font-bold">Danielle Wilson</span> and I opened Bath & Biscuits in 2009 off Columbus Rd in Granville. In 2025, we moved to our current location which allowed us to expand our boutique and bakery, plus give us much more needed room for the salon.
+                                    My name is <span className="text-charcoal font-bold">Danielle Wilson</span>. I opened Bath & Biscuits in 2009 in Granville (Licking County). In 2025, we moved to our current location in Newark, which allowed us to expand our boutique and bakery, and gave us the much-needed room for our growing salon.
                                 </p>
                                 <p>
                                     I grew up in a family that love animals. I was always bringing stray animals home, volunteering at local veterinary hospitals or working at the Columbus Zoo. I attended The Ohio State University to study animal husbandry and then graduated from Columbus State as a Registered Veterinary Technician.
                                 </p>
                                 <p>
-                                    I learned to groom as a RVT and then became certified in both dog and cat grooming. In 2009 I opened Bath & Biscuits to offer quality spa services and premium pet food to the Granville and Licking County area. My Pomeranian, Fia inspires me every day to provide the best for all my furry clients and seek out the safest, most natural way to groom them. I love to groom cats too and help them feel better with clean coats and skin.
+                                    I learned to groom as a RVT and then became certified in both dog and cat grooming. In 2009 I opened Bath & Biscuits to offer quality spa services and wholesome pet food to the Newark and Licking County area. My Pomeranian, Fia inspires me every day to provide the best for all my furry clients and seek out the safest, most natural way to groom them. I love to groom cats too and help them feel better with clean coats and skin.
                                 </p>
                                 <p>
                                     I support local animal rescue, including <span className="text-sage font-bold">Whiskers Animal Rescue of Ohio</span> which focuses on cat rescue. My husband Mike and I foster kittens for Whiskers throughout the year. I also support <span className="text-charcoal font-bold italic">Ethical Dog Breeders</span> who make it their life's passion to learn about the history of their breed, canine health, genetics and structure.

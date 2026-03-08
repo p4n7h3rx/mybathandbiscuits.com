@@ -21,7 +21,7 @@ export default function Home() {
                 badge="Winner: America's Coolest 2024"
                 titleLine1="Elevate Your Pet's"
                 titleLine2="Standard of Care"
-                subtitle="Experience the award-winning destination where clinical expertise from our RVT background meets artisan boutique charm."
+                subtitle="Where experienced hands, gentle handling, and thoughtful care come together to keep pets healthy, comfortable, and looking their best."
                 videoSrc="/images/hero-3.mp4"
                 primaryCTA={{ text: "Book Appointment", href: "https://pawpartner.com/pz/book?p=237080" }}
                 secondaryCTA={{ text: "Explore Services", href: "#services" }}

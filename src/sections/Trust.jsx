@@ -10,7 +10,7 @@ const STATS = [
 
 const TRUST_POINTS = [
     'All staff trained in Pet CPR & First Aid',
-    'Thorough health assessment before every session',
+    'Thorough coat & skin check before every session',
     'Up-to-date vaccinations required for all pets',
     'Natural, detergent-free grooming products',
     'One-on-one attention — no assembly lines',
@@ -115,17 +115,17 @@ export default function Trust() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
                     <div className={`animate-on-scroll ${isVisible ? 'is-visible' : ''}`}>
                         <h3 className="font-serif font-bold text-4xl text-charcoal mb-8">
-                            Our Commitment to <br />Clinical Excellence
+                            Our Commitment to <br />Experienced Care
                         </h3>
                         <p className="font-sans text-lg text-slate leading-relaxed mb-10">
-                            Unlike traditional grooming salons, we integrate clinical knowledge from our veterinary background into every touchpoint. Your pet isn't just a guest; they are our patient.
+                            Unlike traditional grooming salons, we combine years of medical knowledge from our veterinary background with a love for grooming. Your pet is treated like a member of our family.
                         </p>
 
                         <div className="space-y-8 mb-12">
                             {[
-                                { title: "Medical-Grade Sanitation", desc: "We utilize veterinary-grade disinfectants and strict protocols to ensure a sterile environment for every pet." },
-                                { title: "Stress-Reduction Science", desc: "Our handling techniques are rooted in fear-free principles, prioritizing your pet's emotional and neurological well-being." },
-                                { title: "Continuous Health Monitoring", desc: "We track skin, coat, and behavioral metrics across visits to detect potential health issues early." }
+                                { title: "Pet-Safe Sanitation", desc: "We utilize strictly pet-safe disinfectants and thoughtful protocols to ensure a clean and healthy environment for every pet." },
+                                { title: "Stress-Reduction Techniques", desc: "Our handling techniques are rooted in fear-free principles, prioritizing your pet's comfort and emotional well-being." },
+                                { title: "Continuous Health Awareness", desc: "We keep an eye on skin, coat, and behavior across visits to notice any changes in your pet’s needs." }
                             ].map((item, i) => (
                                 <div key={i} className="flex gap-6">
                                     <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage shrink-0" />
@@ -139,7 +139,7 @@ export default function Trust() {
 
                         <div className="bg-sage/5 rounded-[2rem] p-10 border border-sage/10">
                             <p className="font-serif italic text-xl text-sage">
-                                “The safety of our pets is non-negotiable. Every session begins with a mandatory health assessment.”
+                                “The safety of our pets is non-negotiable. We perform a coat and skin check at the start of every appointment to ensure your pet is comfortable and ready.”
                             </p>
                         </div>
                     </div>

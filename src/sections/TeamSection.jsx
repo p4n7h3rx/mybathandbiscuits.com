@@ -5,7 +5,7 @@ const TEAM_MEMBERS = [
         name: 'Danielle Wilson',
         role: 'Owner & Lead Groomer',
         credentials: 'RVT · Dog & Cat Groomer',
-        bio: 'A Registered Veterinary Technician with over 15 years of experience in both clinical care and professional grooming. Danielle blends her deep medical knowledge with a gentle, hands-on approach to keep every pet healthy and happy.',
+        bio: 'A Registered Veterinary Technician with over 15 years of experience in both professional care and professional grooming. Danielle blends her deep medical knowledge with a gentle, hands-on approach to keep every pet healthy and happy.',
         image: '/images/team/Danielle.webp'
     },
     {

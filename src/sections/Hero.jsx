@@ -34,7 +34,7 @@ function hasWebGL() {
 }
 
 export default function Hero({
-    badge = "Since 2009 · Granville",
+    badge = "Since 2009 · Licking County",
     titleLine1 = "Professional Grooming for",
     titleLine2 = "Dogs & Cats in Licking County",
     subtitle = "Where experienced hands, gentle handling, and thoughtful care come together to keep pets healthy, comfortable, and looking their best.",

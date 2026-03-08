@@ -3,13 +3,13 @@ import { useRef, useEffect, useState } from 'react'
 const STEPS = [
     {
         number: '01',
-        title: 'Clinical Assessment',
-        description: 'Every session begins with a mandatory health check by our RVT-trained staff to ensure your pet is safe and comfortable.',
-        detail: 'Skin, coat, and health assessment.'
+        title: 'Coat & Skin Check',
+        description: 'Every session begins with a gentle grooming greeting and skin check to ensure your pet is happy and comfortable.',
+        detail: 'Skin, coat, and wellness check.'
     },
     {
         number: '02',
-        title: 'Bespoke Spa Treatment',
+        title: 'Gentle Spa Treatment',
         description: 'Using natural, detergent-free products and therapeutic methods like Thera-Clean® for a superior, healthy cleanse.',
         detail: 'Tailored to breed and skin type.'
     },
@@ -17,7 +17,7 @@ const STEPS = [
         number: '03',
         title: 'Master Styling',
         description: 'Our certified groomers craft unique styles that highlight your pet\'s character while maintaining breed standards.',
-        detail: 'Artisan finishing & accessories.'
+        detail: 'Hand-styled finishing & accessories.'
     }
 ]
 
@@ -50,7 +50,7 @@ export default function Journey() {
                         </h2>
                     </div>
                     <p className="font-sans text-lg text-white/40 max-w-sm mb-4">
-                        We've redefined the grooming process to prioritize clinical health and artisanal excellence at every step.
+                        We've redefined the grooming process to prioritize pet comfort and experienced care at every step.
                     </p>
                 </div>
 

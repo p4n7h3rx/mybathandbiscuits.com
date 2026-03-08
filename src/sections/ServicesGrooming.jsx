@@ -5,10 +5,11 @@ const SERVICES = [
         id: 'luxury-grooming',
         icon: HiScissors,
         title: 'Luxury Grooming',
-        subtitle: 'Artisan Styling & Clinical Care',
+        subtitle: 'Thoughtful Styling & Individual Care',
         image: '/images/Grooming-1.webp',
+        imageAlt: 'Professional Dog Grooming Newark OH',
         description:
-            'A one-on-one sanctuary where clinical safety meets master artistry.',
+            'A quiet, comfortable space where experienced hands and gentle handling come together.',
         features: [
             'HydroLux™ Therapeutic Bathing',
             'Elite Breed-Standard Styling',
@@ -23,10 +24,11 @@ const SERVICES = [
         id: 'theraclean',
         icon: HiSparkles,
         title: 'Thera-Clean® Spa',
-        subtitle: 'Skin Wellness Therapy',
+        subtitle: 'Wholesome Skin Care',
         image: '/images/Grooming-spray-1.webp',
+        imageAlt: 'Thera-Clean Microbubble Spa Newark Ohio',
         description:
-            'The clinical gold standard for deep-pore skin health and allergy relief.',
+            'The trusted standard for deep-pore skin health and allergy relief.',
         features: [
             'Billions of Oxygen-Rich Bubbles',
             '100% Chemical-Free Scalpels',
@@ -34,7 +36,7 @@ const SERVICES = [
             'Dermatological Allergy Relief',
             'Advanced Odor Elimination',
         ],
-        badges: ['Clinical Wellness'],
+        badges: ['Skin Wellness'],
         accent: 'sage',
         featured: true,
     },
@@ -42,18 +44,19 @@ const SERVICES = [
         id: 'cat-grooming',
         icon: HiHeart,
         title: 'Feline Specialization',
-        subtitle: 'Expert-Led Cat Artistry',
+        subtitle: 'Expert-Led Cat Care',
         image: '/images/cats.webp',
+        imageAlt: 'Expert Cat Grooming Licking County Ohio',
         description:
-            'Certified master groomers provide a quiet, stress-free cat environment.',
+            'Experienced groomers provide a quiet, stress-free cat environment.',
         features: [
-            'Certified Master Groomers',
+            'Experienced Groomers',
             'Exclusive Cat-Only Quiet Zone',
-            'Bespoke Lion Cuts & De-matting',
+            'Tailored Lion Cuts & De-matting',
             'Stress-Reduced Hydro Bathing',
-            'Clinical Coat Assessments',
+            'Coat & Skin Checks',
         ],
-        badges: ['Safety Certified', 'Master Artisans'],
+        badges: ['Safety Certified', 'Expert Stylists'],
         accent: 'blush',
     },
 ]
@@ -72,7 +75,7 @@ export default function ServicesGrooming() {
                             Excellence <span className="text-sage italic font-medium">In Every Detail.</span>
                         </h2>
                         <p className="font-sans text-lg text-slate leading-relaxed opacity-80">
-                            Clinical precision meets artisanal luxury. We've defined a standard of care that prioritizes your pet's long-term wellness.
+                            Where experienced hands and thoughtful care come together. We’ve defined a standard of grooming that prioritizes your pet’s comfort and happiness.
                         </p>
                     </div>
 
@@ -105,7 +108,7 @@ export default function ServicesGrooming() {
                                     <img
                                         src={service.image}
                                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                                        alt={service.title}
+                                        alt={service.imageAlt || service.title}
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent" />
                                     <div className="absolute top-6 left-6 flex flex-wrap gap-2">

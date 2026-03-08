@@ -10,12 +10,12 @@ import ImageGallery from '../components/ImageGallery'
 import { useEffect } from 'react'
 
 const HERITAGE_GALLERY = [
-    { url: '/images/store exterior.webp', alt: 'Bath & Biscuits Exterior' },
-    { url: '/images/Store Sign Board.webp', alt: 'Bath & Biscuits Branding' },
-    { url: '/images/Store Board Sign with Decore bone.webp', alt: 'Pet Styling Details' },
-    { url: '/images/Photo area.webp', alt: 'Pet Photo Area' },
-    { url: '/images/bakery-dog-treats-2.webp', alt: 'Baked with Love' },
-    { url: '/images/IMG_9244.webp', alt: 'Small Batch Treats' },
+    { url: '/images/store exterior.webp', alt: 'Bath & Biscuits Newark Store Exterior' },
+    { url: '/images/Store Sign Board.webp', alt: 'Award-Winning Pet Salon Branding' },
+    { url: '/images/Store Board Sign with Decore bone.webp', alt: 'Pet Styling Details Newark' },
+    { url: '/images/Photo area.webp', alt: 'Pet Photo Area Licking County' },
+    { url: '/images/bakery-dog-treats-2.webp', alt: 'Dog Bakery Newark Treats' },
+    { url: '/images/IMG_9244.webp', alt: 'Small Batch Dog Treats OH' },
 ]
 
 export default function AboutPage() {

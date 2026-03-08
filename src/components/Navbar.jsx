@@ -106,7 +106,7 @@ export default function Navbar() {
                                 Bath & Biscuits
                             </span>
                             <span className={`font-sans font-black uppercase tracking-[0.3em] transition-all duration-700 block mt-1.5 whitespace-nowrap ${activeScrolled ? 'text-[8px] text-sage' : 'text-[9px] text-sage/90'}`}>
-                                Granville · Ohio
+                                Newark · Ohio
                             </span>
                         </div>
                     </Link>

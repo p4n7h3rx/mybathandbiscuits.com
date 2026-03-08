@@ -10,14 +10,14 @@ import ImageGallery from '../components/ImageGallery'
 import { useEffect } from 'react'
 
 const GROOMING_GALLERY = [
-    { url: '/images/Grooming-1.webp', alt: 'Poodle Grooming' },
-    { url: '/images/Grooming-2.webp', alt: 'Small Dog Spa' },
-    { url: '/images/bakery-2.webp', alt: 'Boutique Treats' },
-    { url: '/images/Groomin-spray-2.webp', alt: 'Finishing Spritz' },
-    { url: '/images/Grooming-spray-1.webp', alt: 'Coat Therapy' },
-    { url: '/images/cats.webp', alt: 'Expert Cat Grooming' },
-    { url: '/images/IMG_9244.webp', alt: 'Luxury Styling' },
-    { url: '/images/bakery-dog-treats-1.webp', alt: 'Artisan Rewards' },
+    { url: '/images/Grooming-1.webp', alt: 'Professional Dog Grooming Newark OH' },
+    { url: '/images/Grooming-2.webp', alt: 'Small Dog Spa Licking County' },
+    { url: '/images/bakery-2.webp', alt: 'Natural Dog Treats Newark' },
+    { url: '/images/Groomin-spray-2.webp', alt: 'Dog Finishing Spritz Newark' },
+    { url: '/images/Grooming-spray-1.webp', alt: 'Coat Therapy & Wellness OH' },
+    { url: '/images/cats.webp', alt: 'Expert Cat Grooming Licking County' },
+    { url: '/images/IMG_9244.webp', alt: 'Quality Pet Styling Newark' },
+    { url: '/images/bakery-dog-treats-1.webp', alt: 'Natural Dog Rewards Newark' },
 ]
 
 export default function Grooming() {
@@ -30,8 +30,8 @@ export default function Grooming() {
             <Hero
                 badge="Winner: America's Coolest 2024"
                 titleLine1="The Gold Standard"
-                titleLine2="For Granville Pets"
-                subtitle="Clinical precision meets artisan boutique charm. We provide a low-stress, one-on-one environment for your pet's complete wellness."
+                titleLine2="For Licking County Pets"
+                subtitle="Quality grooming, gentle handling, and thoughtful care. We provide a low-stress, one-on-one environment for your pet's complete well-being."
                 videoSrc="/images/hero-grooming.mp4"
                 primaryCTA={{ text: "Book Appointment", href: "https://pawpartner.com/pz/book?p=237080" }}
                 secondaryCTA={{ text: "View Treatments", href: "#services-grooming" }}
@@ -46,17 +46,17 @@ export default function Grooming() {
                     <div>
                         <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-8 block">Uncompromising Standards</span>
                         <h2 className="font-serif font-black text-5xl text-charcoal mb-8 leading-tight">
-                            Clinical Safety <br /> Meets <span className="text-sage italic font-medium">Salon Luxury</span>
+                            Quality Care <br /> Meets <span className="text-sage italic font-medium">Experienced Hands</span>
                         </h2>
                         <p className="font-sans text-lg text-slate mb-8 leading-relaxed">
-                            Every pet deserves the same level of care we'd give our own. That's why we utilize medical-grade sanitation, state-of-the-art drying systems, and hydro-massage bathing for every visit.
+                            Every pet deserves the same level of care we'd give our own. That's why we utilize pet-safe sanitation, state-of-the-art drying systems, and hydro-massage bathing for every visit.
                         </p>
                         <ul className="space-y-4 mb-10">
                             {[
                                 "One-on-One Individualized Care",
-                                "Medical-Grade UV Sanitation",
+                                "Pet-Safe UV Sanitation",
                                 "AKC S.A.F.E. Certified Practices",
-                                "Skin & Coat Health Assessment"
+                                "Skin & Coat Check"
                             ].map(item => (
                                 <li key={item} className="flex items-center gap-4">
                                     <span className="w-1.5 h-1.5 rounded-full bg-sage" />

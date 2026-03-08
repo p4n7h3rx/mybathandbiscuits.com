@@ -36,7 +36,7 @@ export default function MapSection() {
                     <div className="flex flex-col justify-center p-4 md:p-8">
                         <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-8 block">Find Us</span>
                         <h2 className="font-serif font-black text-4xl md:text-6xl text-charcoal mb-10 leading-tight">
-                            At the Heart <br /> of <span className="text-sage italic font-medium">Newark.</span>
+                            At the Heart <br /> of our <span className="text-sage italic font-medium">Community.</span>
                         </h2>
 
                         <div className="space-y-10 mb-12">
@@ -74,7 +74,7 @@ export default function MapSection() {
 
                         <div className="flex flex-col sm:flex-row gap-4">
                             <a
-                                href="https://www.google.com/maps/dir//Bath+%26+Biscuits+111+Union+St+Granville,+OH+43023"
+                                href="https://maps.app.goo.gl/VrhQ2gPsB4kPxgLn7"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn-primary !px-10 py-4 text-center cursor-pointer"

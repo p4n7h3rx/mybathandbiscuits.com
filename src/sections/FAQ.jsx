@@ -3,24 +3,28 @@ import { HiPlus, HiMinus } from 'react-icons/hi'
 
 const FAQS = [
     {
-        question: "How do I know if the Thera-Clean® Microbubble Spa is right for my pet?",
-        answer: "The Thera-Clean® system is ideal for any pet, but it's especially beneficial for those with sensitive skin, allergies, persistent odors, or dermatological conditions. Since it uses only water and microscopic bubbles (no chemicals), it is one of the safest and deepest cleanses available in the industry."
+        question: "Is the Thera-Clean® Microbubble Spa in Newark right for my pet?",
+        answer: "The Thera-Clean® system is ideal for any pet, but it's especially beneficial for those with sensitive skin, allergies, persistent odors, or dermatological conditions. Since it uses only water and microscopic bubbles (no chemicals), it is one of the safest and deepest cleanses available in the industry. We're proud to offer this service right here in Newark, OH."
     },
     {
-        question: "What products do you use for grooming?",
-        answer: "We use strictly natural, detergent-free, and paraben-free shampoos and conditioners. As part of our clinical standard, we select products based on your pet's specific skin and coat needs identified during our initial assessment."
+        question: "What grooming products does Bath & Biscuits use?",
+        answer: "We use strictly natural, detergent-free, and paraben-free shampoos and conditioners. As part of our care standard, we select products based on your pet's specific skin and coat needs identified during our initial check."
     },
     {
-        question: "Do you require up-to-date vaccinations?",
-        answer: "Yes. For the safety of all our guests and staff, we require proof of Rabies, Distemper, and Bordetella vaccinations for dogs, and Rabies and Distemper for cats. Keeping your pet protected is a core part of our clinical care standard."
+        question: "Do you require up-to-date vaccinations for pet grooming in Licking County?",
+        answer: "Yes. For the safety of all our guests and staff, we require proof of Rabies, Distemper, and Bordetella vaccinations for dogs, and Rabies and Distemper for cats. Keeping your pet protected is a core part of our care standard."
     },
     {
-        question: "How long does a typical grooming session take?",
+        question: "How long does a dog grooming session take in Newark, OH?",
         answer: "A standard one-on-one session typically lasts 2 to 4 hours, depending on the service and coat condition. We prioritize a stress-free experience, giving each pet the time they need to feel comfortable and relaxed rather than rushing through an 'assembly line' process."
     },
     {
-        question: "Are you experienced with senior pets or those with anxiety?",
-        answer: "Absolutely. With our Registered Veterinary Technician background, we are uniquely equipped to handle the physiological and emotional needs of senior pets and those with high anxiety. We use gentle handling techniques and provided a calm, quiet environment to ensure their well-being."
+        question: "Does Bath & Biscuits groom senior pets or anxious dogs and cats?",
+        answer: "Absolutely. With our Registered Veterinary Technician background, we are uniquely equipped to handle the physiological and emotional needs of senior pets and those with high anxiety. We use gentle handling techniques and provide a calm, quiet environment to ensure their well-being."
+    },
+    {
+        question: "Do you offer cat grooming near Newark and Heath, Ohio?",
+        answer: "Yes! Our certified feline specialists provide a quiet, stress-free environment designed exclusively for cats. From lion cuts to therapeutic bathing, we serve cats across Newark, Heath, Granville, and the wider Licking County area."
     }
 ]
 
@@ -32,11 +36,11 @@ export default function FAQ() {
             <div className="max-w-4xl mx-auto px-6 md:px-12">
                 <div className="text-center mb-20">
                     <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-8 block">
-                        Clarification
+                        Common Questions
                     </span>
                     <h2 className="font-serif font-black text-5xl md:text-6xl text-charcoal leading-[0.9] tracking-tighter mb-4">
                         Frequently <br />
-                        <span className="text-sage italic font-medium">Observed.</span>
+                        <span className="text-sage italic font-medium">Asked.</span>
                     </h2>
                 </div>
 
@@ -77,10 +81,26 @@ export default function FAQ() {
                         href="mailto:info@mybathandbiscuits.com"
                         className="font-sans text-xs font-bold text-sage uppercase tracking-widest underline decoration-sage/20 hover:decoration-sage transition-all"
                     >
-                        Contact Our Clinical Staff
+                        Contact Our Experienced Team
                     </a>
                 </div>
             </div>
+
+            {/* FAQPage Schema for Google Featured Snippets */}
+            <script type="application/ld+json" dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    "mainEntity": FAQS.map(faq => ({
+                        "@type": "Question",
+                        "name": faq.question,
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": faq.answer
+                        }
+                    }))
+                })
+            }} />
         </section>
     )
 }

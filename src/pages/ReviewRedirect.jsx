@@ -89,7 +89,7 @@ export default function ReviewRedirect() {
                                 Thank You for <br /> <span className="text-sage italic font-medium">Your Feedback.</span>
                             </h2>
                             <p className="font-sans text-slate mb-12 leading-relaxed">
-                                We sincerely appreciate your honesty. Our management team will review your comments to ensure we continue providing Granville's premier pet experience.
+                                We sincerely appreciate your honesty. Our management team will review your comments to ensure we continue providing Licking County's premier pet experience.
                             </p>
 
                             <a

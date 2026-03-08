@@ -25,7 +25,7 @@ export default function SignatureMemories() {
                             Signature <span className="text-sage italic font-medium">Memories.</span>
                         </h2>
                         <p className="font-sans text-lg text-slate mb-10 leading-relaxed">
-                            The transformation doesn't end at the grooming table. Our <span className="text-charcoal font-bold">Signature Photo Area</span> is where we celebrate the joyful culmination of every visit. It's a moment for your pet to shine, captured in our beautifully curated boutique environment—ready to be shared with friends, family, and our growing community of Granville pet parents.
+                            The transformation doesn't end at the grooming table. Our <span className="text-charcoal font-bold">Signature Photo Area</span> is where we celebrate the joyful culmination of every visit. It's a moment for your pet to shine, captured in our beautifully curated boutique environment—ready to be shared with friends, family, and our growing community of pet parents.
                         </p>
                         <div className="flex flex-col gap-6">
                             <div className="flex items-center gap-4">
@@ -38,7 +38,7 @@ export default function SignatureMemories() {
                                 <span className="w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center text-sage">
                                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
                                 </span>
-                                <span className="font-sans font-bold text-charcoal/80 uppercase text-[10px] tracking-widest">Artisan Celebration Layouts</span>
+                                <span className="font-sans font-bold text-charcoal/80 uppercase text-[10px] tracking-widest">Special Celebration Layouts</span>
                             </div>
                         </div>
                     </div>
