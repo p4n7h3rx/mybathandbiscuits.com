@@ -63,14 +63,14 @@ function App() {
       breadcrumb: 'Home'
     },
     '/grooming': {
-      title: 'Dog & Cat Grooming Services Newark OH | Bath & Biscuits',
+      title: 'Dog & Cat Grooming Newark OH | Bath & Biscuits',
       description: 'Professional dog grooming, cat grooming, and Thera-Clean® Microbubble Spa in Newark, Ohio. One-on-one gentle care by certified stylists in Licking County.',
-      breadcrumb: 'Grooming Services'
+      breadcrumb: 'Grooming'
     },
     '/bakery': {
       title: 'Dog Bakery & Custom Pet Cakes Newark OH | Bath & Biscuits',
-      description: 'Fresh-baked dog treats, custom birthday cakes, and pet boutique accessories in Newark, Ohio. Human-grade ingredients, small-batch baked in Licking County.',
-      breadcrumb: 'Bakery & Boutique'
+      description: 'Fresh-baked dog treats, custom birthday cakes, and pet accessories in Newark, Ohio. Human-grade ingredients, small-batch baked in Licking County.',
+      breadcrumb: 'Bakery'
     },
     '/about': {
       title: 'About Bath & Biscuits — Pet Grooming Newark OH Since 2009',

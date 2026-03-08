@@ -6,10 +6,10 @@ import { useMagnetic } from '../hooks/useMagnetic'
 const BOOKING_URL = 'https://pawpartner.com/pz/book?p=237080'
 const NAV_LINKS = [
     { name: 'Home', href: '/', type: 'route' },
-    { name: 'Services', href: '/grooming', type: 'route' },
+    { name: 'Grooming', href: '/grooming', type: 'route' },
     { name: 'About', href: '/about', type: 'route' },
     { name: 'Testimonials', href: '/#testimonials', type: 'anchor' },
-    { name: 'Boutique', href: '/bakery', type: 'route' },
+    { name: 'Bakery', href: '/bakery', type: 'route' },
     { name: 'Contact', href: BOOKING_URL, type: 'external' },
 ]
 
@@ -81,25 +81,22 @@ export default function Navbar() {
             <nav
                 className={`transition-all duration-700 mx-auto px-4 ${activeScrolled ? 'max-w-5xl' : 'max-w-7xl'}`}
             >
-                <div className={`flex items-center justify-between transition-all duration-700 nav-pill ${activeScrolled
+                <div className={`flex items-center justify-between gap-4 md:gap-8 transition-all duration-700 nav-pill ${activeScrolled
                     ? 'glass-card shadow-2xl !bg-white/90'
                     : 'bg-transparent border-transparent'
                     }`}>
                     {/* Logo Area */}
                     <Link
-                        ref={logoRef}
                         to="/"
                         onClick={() => setIsMobileOpen(false)}
-                        className="flex items-center gap-3 md:gap-4 cursor-pointer group magnetic pr-4"
+                        className="flex items-center gap-3 md:gap-4 cursor-pointer group"
                     >
-                        <div className={`transition-all duration-500 flex items-center justify-center overflow-hidden rounded-full shadow-2xl ring-1 ring-white/20 ${activeScrolled ? 'h-10 md:h-12' : 'h-14 md:h-16'}`}>
-                            <div className="h-full aspect-square bg-charcoal p-1.5 flex items-center justify-center">
-                                <img
-                                    src="/images/Logo.png"
-                                    alt="Bath & Biscuits"
-                                    className="h-full w-full object-contain"
-                                />
-                            </div>
+                        <div className={`transition-all duration-500 flex items-center justify-center aspect-square ${activeScrolled ? 'h-12 md:h-14' : 'h-16 md:h-20'}`}>
+                            <img
+                                src="/images/BB.png"
+                                alt="Bath & Biscuits"
+                                className="h-full w-auto object-contain"
+                            />
                         </div>
                         <div className="flex flex-col">
                             <span className={`font-serif font-black transition-all duration-700 tracking-tight block leading-none ${activeScrolled ? 'text-lg text-charcoal' : 'text-xl text-warm-white'}`}>
@@ -112,7 +109,7 @@ export default function Navbar() {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden lg:flex items-center gap-8 xl:gap-12">
+                    <div className="hidden lg:flex items-center gap-8 xl:gap-14">
                         {NAV_LINKS.map((link) => (
                             link.type === 'external' ? (
                                 <a

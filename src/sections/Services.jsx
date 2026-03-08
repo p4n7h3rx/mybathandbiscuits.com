@@ -109,7 +109,7 @@ export default function Services() {
                         />
                         <div className="relative z-10 max-w-5xl px-6 md:px-24">
                             <span className="font-sans text-[10px] md:text-xs font-bold text-sage tracking-[0.4rem] uppercase mb-6 md:mb-8 block">
-                                Portfolio of Services
+                                Grooming Portfolio
                             </span>
                             <h2 className="font-serif font-black text-4xl md:text-[6rem] text-charcoal mb-6 md:mb-10 leading-[0.9] tracking-tighter">
                                 Excellence <br />

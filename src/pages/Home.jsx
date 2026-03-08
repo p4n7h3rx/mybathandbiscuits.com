@@ -24,7 +24,7 @@ export default function Home() {
                 subtitle="Where experienced hands, gentle handling, and thoughtful care come together to keep pets healthy, comfortable, and looking their best."
                 videoSrc="/images/hero-3.mp4"
                 primaryCTA={{ text: "Book Appointment", href: "https://pawpartner.com/pz/book?p=237080" }}
-                secondaryCTA={{ text: "Explore Services", href: "#services" }}
+                secondaryCTA={{ text: "Explore Grooming", href: "#services" }}
             />
             <Bakery />
             <Services />

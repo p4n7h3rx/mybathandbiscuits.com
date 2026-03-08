@@ -5,11 +5,11 @@ import { useMagnetic } from '../hooks/useMagnetic'
 
 const QUICK_LINKS = [
     { name: 'Home', href: '/' },
-    { name: 'Services', href: '/#services' },
+    { name: 'Grooming', href: '/grooming' },
     { name: 'Thera-Clean®', href: '/grooming' },
     { name: 'About', href: '/about' },
     { name: 'Testimonials', href: '/#testimonials' },
-    { name: 'Boutique', href: '/bakery' },
+    { name: 'Bakery', href: '/bakery' },
     { name: 'Book Online', href: 'https://pawpartner.com/pz/book?p=237080' },
 ]
 
@@ -32,7 +32,7 @@ export default function Footer() {
                         <div className="mb-10">
                             <div className="h-20 w-20 bg-charcoal rounded-full p-2 shadow-2xl ring-1 ring-white/10 mb-6 flex items-center justify-center overflow-hidden transition-transform duration-500 hover:scale-105">
                                 <img
-                                    src="/images/Logo.png"
+                                    src="/images/BB.png"
                                     alt="Bath & Biscuits"
                                     className="h-full w-full object-contain opacity-90"
                                 />

@@ -25,7 +25,7 @@ export default function BakeryPage() {
             <Hero
                 badge="Winner: America's Coolest 2024"
                 titleLine1="Fresh-Baked Treats &"
-                titleLine2="Boutique Finds"
+                titleLine2="Bakery Delights"
                 subtitle="Small-batch, human-grade ingredients for your pet's happiness. Explore our curated collection of accessories and bakery-fresh delights."
                 videoSrc="/images/hero-2.mp4"
                 primaryCTA={{ text: "Book Appointment", href: BOOKING_URL }}
@@ -84,7 +84,7 @@ export default function BakeryPage() {
                         <div className="order-1 lg:order-2">
                             <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-8 block">Celebration Station</span>
                             <h2 className="font-serif font-black text-5xl md:text-6xl text-charcoal mb-8 leading-tight">
-                                Custom <br /> <span className="text-sage italic font-medium">Boutique Cakes</span>
+                                Custom <br /> <span className="text-sage italic font-medium">Bakery Cakes</span>
                             </h2>
                             <p className="font-sans text-lg text-slate mb-10 leading-relaxed max-w-xl">
                                 Make their "gotcha day" or birthday unforgettable with a custom-built, human-grade cake. From grain-free bases to hand-decorated icing, our cakes are the centerpiece of every pet party.
@@ -144,7 +144,7 @@ export default function BakeryPage() {
                             </div>
                             <div className="absolute -bottom-4 -right-2 md:-bottom-10 md:-right-10 bg-sage p-6 md:p-10 rounded-[1.5rem] md:rounded-[2.5rem] shadow-2xl text-white max-w-[200px] md:max-w-xs rotate-3">
                                 <h4 className="font-serif italic text-xl md:text-2xl mb-1 md:mb-2 leading-none">Sweet Discovery</h4>
-                                <p className="font-sans text-[12px] md:text-sm text-white/80">Looks like ice cream, eats like a premium cake.</p>
+                                <p className="font-sans text-[12px] md:text-sm text-white/80">Looks like ice cream, eats like a premium bakery cake.</p>
                             </div>
                         </div>
                     </div>

@@ -72,7 +72,7 @@ export default function Bakery() {
                     {/* Right: Narrative Content */}
                     <div className={`animate-on-scroll ${isVisible ? 'is-visible' : ''}`}>
                         <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-8 block">
-                            Our Boutique
+                            Our Bakery
                         </span>
                         <h2 className="font-serif font-black text-4xl sm:text-5xl md:text-6xl text-charcoal mb-8 leading-[0.9] tracking-tighter">
                             Fresh-Baked <br />
@@ -129,7 +129,7 @@ export default function Bakery() {
                     <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-8 text-center md:text-left">
                         <div className="w-full md:w-auto">
                             <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-6 block">Visual Menu</span>
-                            <h3 className="font-serif font-black text-4xl md:text-5xl text-charcoal">Boutique <span className="text-sage italic font-medium">Spotlight.</span></h3>
+                            <h3 className="font-serif font-black text-4xl md:text-5xl text-charcoal">Bakery <span className="text-sage italic font-medium">Spotlight.</span></h3>
                         </div>
                         <p className="font-sans text-sm text-slate/50 max-w-xs mx-auto md:mx-0">Each treat is handcrafted with care, designed for health and celebration.</p>
                     </div>
