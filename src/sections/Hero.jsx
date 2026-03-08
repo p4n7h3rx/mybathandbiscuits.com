@@ -88,7 +88,7 @@ export default function Hero({
     return (
         <section
             id="hero"
-            className="relative h-screen w-full flex items-center justify-center overflow-hidden"
+            className="relative min-h-screen w-full flex items-center justify-center overflow-hidden"
             style={{ background: 'linear-gradient(180deg, #FDF8F0 0%, #F5E6D3 60%, #FDF8F0 100%)' }}
         >
             {/* Cinematic Video Background with Multi-Layer Overlays */}
@@ -110,7 +110,7 @@ export default function Hero({
 
             {/* Hero Content */}
             {/* Hero Content */}
-            <div className="relative z-20 text-center px-6 md:px-12 max-w-6xl mx-auto pt-20 md:pt-32">
+            <div className="relative z-20 text-center px-6 md:px-12 max-w-6xl mx-auto pt-24 md:pt-40 pb-20">
 
                 {/* Tagline badge */}
                 {badge && (
@@ -136,7 +136,7 @@ export default function Hero({
                 {/* Subtitle */}
                 {subtitle && (
                     <p
-                        className="font-sans text-base md:text-xl text-warm-white/90 transform max-w-2xl mx-auto mb-10 md:mb-12 text-balance animate-fade-in-up leading-relaxed"
+                        className="font-sans text-base md:text-xl text-warm-white/90 transform max-w-2xl mx-auto mb-8 md:mb-10 text-balance animate-fade-in-up leading-relaxed"
                         style={{ animationDelay: '0.4s' }}
                     >
                         {subtitle}
