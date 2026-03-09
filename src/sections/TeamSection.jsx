@@ -13,7 +13,7 @@ const TEAM_MEMBERS = [
         role: 'Canine Stylist',
         credentials: 'Professional Stylist',
         bio: 'With an eye for detail and a calm, patient touch, Allison specializes in creating looks that make pets feel as good as they look. She loves getting to know the unique personality of every dog that visits her table.',
-        image: '/images/team/Danielle.webp' // Placeholder: Using Danielle's optimized image until Allison's is provided
+        image: '/images/team/Allison-Cannie-Stylist.webp'
     },
     {
         name: 'Ash Butcher',
