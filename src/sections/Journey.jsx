@@ -37,19 +37,19 @@ export default function Journey() {
     }, [])
 
     return (
-        <section ref={sectionRef} className="py-24 md:py-40 bg-charcoal text-white overflow-hidden">
+        <section ref={sectionRef} className="py-24 md:py-40 bg-black text-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
                 <div className="flex flex-col lg:flex-row justify-between items-end mb-24 gap-8">
                     <div className="max-w-2xl">
-                        <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-8 block">
+                        <span className="font-sans text-[10px] font-black text-white/40 tracking-[0.4rem] uppercase mb-8 block">
                             Service Standard
                         </span>
-                        <h2 className="font-serif font-black text-5xl md:text-7xl leading-[0.9] tracking-tighter">
+                        <h2 className="font-serif font-black text-4xl md:text-8xl leading-[0.8] tracking-tighter">
                             The Elite <br />
-                            <span className="text-sage italic font-medium">Grooming Journey.</span>
+                            <span className="text-white italic font-normal opacity-70">Grooming Journey.</span>
                         </h2>
                     </div>
-                    <p className="font-sans text-lg text-white/40 max-w-sm mb-4">
+                    <p className="font-sans text-lg text-white/40 max-w-sm mb-4 font-medium italic">
                         We've redefined the grooming process to prioritize pet comfort and experienced care at every step.
                     </p>
                 </div>
@@ -63,16 +63,16 @@ export default function Journey() {
                             key={step.number}
                             className={`relative transition-all duration-1000 delay-${idx * 200} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
                         >
-                            <div className="w-20 h-20 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mb-10 relative z-10 group-hover:border-sage transition-colors duration-500">
-                                <span className="font-serif text-2xl text-sage">{step.number}</span>
+                            <div className="w-20 h-20 rounded-sm bg-white/5 border border-white/10 flex items-center justify-center mb-10 relative z-10 transition-colors duration-500">
+                                <span className="font-serif text-3xl text-white/40 font-black">{step.number}</span>
                             </div>
-                            <h3 className="font-serif font-bold text-2xl mb-6">{step.title}</h3>
-                            <p className="font-sans text-white/60 leading-relaxed mb-8">
+                            <h3 className="font-serif font-black text-2xl mb-6 uppercase tracking-tight">{step.title}</h3>
+                            <p className="font-sans text-white/60 leading-relaxed mb-8 font-normal">
                                 {step.description}
                             </p>
-                            <div className="pt-6 border-t border-white/5">
-                                <span className="font-sans text-[10px] uppercase tracking-widest text-sage font-black">Focus</span>
-                                <p className="font-sans text-sm mt-2 text-white/40">{step.detail}</p>
+                            <div className="pt-8 border-t border-white/10">
+                                <span className="font-sans text-[10px] uppercase tracking-widest text-white font-black">Focus</span>
+                                <p className="font-sans text-sm mt-3 text-white/40 font-medium italic">{step.detail}</p>
                             </div>
                         </div>
                     ))}

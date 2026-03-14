@@ -29,7 +29,7 @@ export default function Grooming() {
         <>
             <Hero
                 badge="Winner: America's Coolest 2024"
-                titleLine1="The Gold Standard"
+                titleLine1="The Elite Standard"
                 titleLine2="For Licking County Pets"
                 subtitle="Quality grooming, gentle handling, and thoughtful care. We provide a low-stress, one-on-one environment for your pet's complete well-being."
                 videoSrc="/images/hero-grooming.mp4"
@@ -41,31 +41,31 @@ export default function Grooming() {
 
             <GroomingProcess />
 
-            <section className="py-24 bg-cream overflow-hidden">
-                <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <section className="py-24 bg-white overflow-hidden border-t border-black/5">
+                <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
                     <div>
-                        <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-8 block">Uncompromising Standards</span>
-                        <h2 className="font-serif font-black text-5xl text-charcoal mb-8 leading-tight">
-                            Quality Care <br /> Meets <span className="text-sage italic font-medium">Experienced Hands</span>
+                        <span className="font-sans text-[10px] font-black text-black/40 tracking-[0.4rem] uppercase mb-8 block">Uncompromising Standards</span>
+                        <h2 className="font-serif font-black text-4xl md:text-8xl text-black mb-8 leading-[0.8] tracking-tighter">
+                            Quality Care <br /> Meets <span className="text-black italic font-normal opacity-70">Experienced Hands</span>
                         </h2>
-                        <p className="font-sans text-lg text-slate mb-8 leading-relaxed">
+                        <p className="font-sans text-lg text-black/70 mb-12 leading-relaxed font-medium">
                             Every pet deserves the same level of care we'd give our own. That's why we utilize pet-safe sanitation, state-of-the-art drying systems, and hydro-massage bathing for every visit.
                         </p>
-                        <ul className="space-y-4 mb-10">
+                        <ul className="space-y-6 mb-12">
                             {[
                                 "One-on-One Individualized Care",
                                 "Pet-Safe UV Sanitation",
                                 "AKC S.A.F.E. Certified Practices",
                                 "Skin & Coat Check"
                             ].map(item => (
-                                <li key={item} className="flex items-center gap-4">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-sage" />
-                                    <span className="font-sans font-bold text-charcoal/80 uppercase text-xs tracking-widest">{item}</span>
+                                <li key={item} className="flex items-center gap-4 group">
+                                    <div className="w-2 h-2 rounded-full bg-black/20 group-hover:bg-black transition-all" />
+                                    <span className="font-sans font-black text-black/80 uppercase text-[10px] tracking-widest">{item}</span>
                                 </li>
                             ))}
                         </ul>
                     </div>
-                    <div className="rounded-[3rem] overflow-hidden shadow-2xl relative group bg-charcoal">
+                    <div className="rounded-sm overflow-hidden shadow-2xl relative group bg-black border border-black/5">
                         <video
                             id="grooming-video-player"
                             src="/images/grooming-video.mp4"
@@ -75,7 +75,7 @@ export default function Grooming() {
                             playsInline
                             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                         />
-                        <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-500 pointer-events-none" />
+                        <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 pointer-events-none" />
                     </div>
                 </div>
             </section>

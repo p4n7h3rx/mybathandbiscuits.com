@@ -35,12 +35,12 @@ export default function FAQ() {
         <section className="py-24 md:py-40 bg-white">
             <div className="max-w-4xl mx-auto px-6 md:px-12">
                 <div className="text-center mb-20">
-                    <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-8 block">
+                    <span className="font-sans text-[10px] font-black text-black/40 tracking-[0.4rem] uppercase mb-8 block">
                         Common Questions
                     </span>
-                    <h2 className="font-serif font-black text-5xl md:text-6xl text-charcoal leading-[0.9] tracking-tighter mb-4">
+                    <h2 className="font-serif font-black text-4xl md:text-8xl text-black leading-[0.8] tracking-tighter mb-4">
                         Frequently <br />
-                        <span className="text-sage italic font-medium">Asked.</span>
+                        <span className="text-black italic font-normal opacity-70">Asked.</span>
                     </h2>
                 </div>
 
@@ -48,16 +48,16 @@ export default function FAQ() {
                     {FAQS.map((faq, idx) => (
                         <div
                             key={idx}
-                            className={`rounded-3xl border transition-all duration-500 overflow-hidden ${openIndex === idx ? 'bg-sage/5 border-sage/20 shadow-xl shadow-sage/5' : 'bg-white border-charcoal/5 hover:border-charcoal/10'}`}
+                            className={`rounded-sm border transition-all duration-500 overflow-hidden ${openIndex === idx ? 'bg-black/5 border-black/20 shadow-xl' : 'bg-white border-black/5 hover:border-black/10'}`}
                         >
                             <button
                                 onClick={() => setOpenIndex(openIndex === idx ? -1 : idx)}
                                 className="w-full px-8 py-8 flex items-center justify-between text-left group"
                             >
-                                <span className={`font-serif text-xl md:text-2xl transition-colors duration-500 ${openIndex === idx ? 'text-charcoal' : 'text-charcoal/60 group-hover:text-charcoal'}`}>
+                                <span className={`font-serif text-xl md:text-2xl transition-colors duration-500 uppercase tracking-tight font-black ${openIndex === idx ? 'text-black' : 'text-black/40 group-hover:text-black'}`}>
                                     {faq.question}
                                 </span>
-                                <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-500 ${openIndex === idx ? 'bg-sage text-white rotate-180' : 'bg-charcoal/5 text-charcoal/40'}`}>
+                                <div className={`w-8 h-8 rounded-sm flex items-center justify-center transition-all duration-500 ${openIndex === idx ? 'bg-black text-white rotate-180' : 'bg-black/5 text-black/20'}`}>
                                     {openIndex === idx ? <HiMinus /> : <HiPlus />}
                                 </div>
                             </button>
@@ -65,8 +65,8 @@ export default function FAQ() {
                             <div
                                 className={`transition-all duration-500 ease-in-out ${openIndex === idx ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}
                             >
-                                <div className="px-8 pb-8 pr-16">
-                                    <p className="font-sans text-lg text-slate leading-relaxed">
+                                <div className="px-8 pb-8 pr-16 border-t border-black/5 mt-4 pt-8">
+                                    <p className="font-sans text-lg text-black/70 leading-relaxed font-medium">
                                         {faq.answer}
                                     </p>
                                 </div>
@@ -76,10 +76,10 @@ export default function FAQ() {
                 </div>
 
                 <div className="mt-20 text-center">
-                    <p className="font-sans text-slate/40 text-sm mb-6">Have a more specific inquiry about your pet?</p>
+                    <p className="font-sans text-black/40 text-sm mb-6 font-medium">Have a more specific inquiry about your pet?</p>
                     <a
                         href="mailto:info@mybathandbiscuits.com"
-                        className="font-sans text-xs font-bold text-sage uppercase tracking-widest underline decoration-sage/20 hover:decoration-sage transition-all"
+                        className="font-sans text-xs font-black text-black uppercase tracking-widest underline decoration-black/20 hover:decoration-black transition-all"
                     >
                         Contact Our Experienced Team
                     </a>

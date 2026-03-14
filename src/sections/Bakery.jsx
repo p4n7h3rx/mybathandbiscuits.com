@@ -43,13 +43,13 @@ export default function Bakery() {
         <section
             id="bakery"
             ref={sectionRef}
-            className="py-24 md:py-40 relative overflow-hidden bg-[#fafafa]"
+            className="py-24 md:py-40 relative overflow-hidden bg-white"
         >
             <div className="max-w-7xl mx-auto px-6 md:px-12">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                     {/* Left: Interactive Imagery */}
                     <div className="relative group">
-                        <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-[0_48px_80px_-16px_rgba(26,26,26,0.15)] border border-white/40">
+                        <div className="relative z-10 rounded-sm overflow-hidden shadow-[0_48px_80px_-16px_rgba(26,26,26,0.15)] border border-black/5">
                             <img
                                 src="/images/bakery-dog-treats-1.webp"
                                 alt="The Bone Bar"
@@ -58,12 +58,12 @@ export default function Bakery() {
                             />
                         </div>
                         {/* Decorative background shape */}
-                        <div className="absolute -top-12 -left-12 w-64 h-64 bg-charcoal/5 rounded-full blur-3xl -z-10" />
+                        <div className="absolute -top-12 -left-12 w-64 h-64 bg-black/5 rounded-full blur-3xl -z-10" />
 
                         {/* Floating Boutique Quote */}
-                        <div className="absolute -bottom-6 -right-2 md:-bottom-10 md:-right-6 glass-card p-6 md:p-10 border border-white max-w-[200px] md:max-w-xs shadow-2xl animate-float">
-                            <span className="text-3xl md:text-4xl text-sage font-serif block mb-2 md:mb-4">“</span>
-                            <p className="font-serif italic text-base md:text-lg text-charcoal leading-snug">
+                        <div className="absolute -bottom-6 -right-2 md:-bottom-10 md:-right-6 bg-black p-6 md:p-10 border border-white/10 max-w-[200px] md:max-w-xs shadow-2xl animate-float rounded-sm">
+                            <span className="text-3xl md:text-4xl text-white/40 font-serif block mb-2 md:mb-4">“</span>
+                            <p className="font-serif italic text-base md:text-lg text-white leading-snug">
                                 Fresh-baked treats made with love, for the pets we cherish.
                             </p>
                         </div>
@@ -71,16 +71,16 @@ export default function Bakery() {
 
                     {/* Right: Narrative Content */}
                     <div className={`animate-on-scroll ${isVisible ? 'is-visible' : ''}`}>
-                        <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-8 block">
+                        <span className="font-sans text-xs font-black text-black/40 tracking-[0.4em] uppercase mb-8 block">
                             Our Bakery
                         </span>
-                        <h2 className="font-serif font-black text-4xl sm:text-5xl md:text-6xl text-charcoal mb-8 leading-[0.9] tracking-tighter">
+                        <h2 className="font-serif font-black text-4xl sm:text-5xl md:text-6xl text-black mb-8 leading-[0.9] tracking-tighter">
                             Fresh-Baked <br />
-                            <span className="text-sage italic font-medium text-3xl sm:text-4xl md:text-6xl">With Love in Newark.</span>
+                            <span className="text-black italic font-normal opacity-70 text-3xl sm:text-4xl md:text-6xl">With Love in Newark.</span>
                         </h2>
 
-                        <p className="font-sans text-xl text-slate mb-12 leading-relaxed">
-                            Our boutique is a curated place for every pet parent. From fresh-baked decorated cookies to hand-selected accessories, we source only the best for your pet.
+                        <p className="font-sans text-xl text-black/80 mb-12 leading-relaxed font-medium">
+                            Our bakery is a curated destination for every pet parent. From fresh-baked decorated cookies to hand-selected accessories, we source only the best for your pet.
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -93,10 +93,10 @@ export default function Bakery() {
                                         style={{ transitionDelay: `${idx * 150}ms` }}
                                     >
                                         <div className="flex items-center gap-4 mb-4">
-                                            <div className="w-10 h-10 rounded-full bg-sage/10 flex items-center justify-center text-sage group-hover:bg-sage group-hover:text-white transition-all">
+                                            <div className="w-10 h-10 rounded-sm bg-black/10 flex items-center justify-center text-black group-hover:bg-black group-hover:text-white transition-all">
                                                 <Icon size={18} />
                                             </div>
-                                            <h4 className="font-serif font-bold text-xl text-charcoal group-hover:text-sage transition-colors">
+                                            <h4 className="font-serif font-black text-xl text-black group-hover:opacity-70 transition-all">
                                                 {cat.title}
                                             </h4>
                                         </div>
@@ -108,15 +108,15 @@ export default function Bakery() {
                             })}
                         </div>
 
-                        <div className="pt-8 border-t border-charcoal/5 flex flex-col md:flex-row items-center gap-8">
+                        <div className="pt-8 border-t border-black/5 flex flex-col md:flex-row items-center gap-8">
                             <a href="https://pawpartner.com/pz/book?p=237080" target="_blank" rel="noopener noreferrer" className="btn-primary magnetic !px-12 w-full md:w-auto">
                                 Book Appointment
                             </a>
                             <div className="text-center md:text-left">
-                                <p className="font-sans text-xs font-black text-charcoal/40 uppercase tracking-widest mb-1">
+                                <p className="font-sans text-xs font-black text-black/40 uppercase tracking-widest mb-1">
                                     📍 Newark, Ohio
                                 </p>
-                                <p className="font-sans text-[10px] font-bold text-sage uppercase tracking-widest">
+                                <p className="font-sans text-[10px] font-black text-black/40 uppercase tracking-widest">
                                     Fresh Batches Daily
                                 </p>
                             </div>
@@ -125,11 +125,11 @@ export default function Bakery() {
                 </div>
 
                 {/* Boutique Gallery Spotlight */}
-                <div className="mt-20 md:mt-32 pt-16 md:pt-24 border-t border-charcoal/5">
+                <div className="mt-20 md:mt-32 pt-16 md:pt-24 border-t border-black/5">
                     <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-8 text-center md:text-left">
                         <div className="w-full md:w-auto">
-                            <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-6 block">Visual Menu</span>
-                            <h3 className="font-serif font-black text-4xl md:text-5xl text-charcoal">Bakery <span className="text-sage italic font-medium">Spotlight.</span></h3>
+                            <span className="font-sans text-[10px] font-black text-black/40 tracking-[0.4rem] uppercase mb-8 block">Visual Menu</span>
+                            <h3 className="font-serif font-black text-4xl md:text-5xl text-black">Bakery <span className="text-black italic font-normal opacity-70">Spotlight.</span></h3>
                         </div>
                         <p className="font-sans text-sm text-slate/50 max-w-xs mx-auto md:mx-0">Each treat is handcrafted with care, designed for health and celebration.</p>
                     </div>
@@ -144,14 +144,14 @@ export default function Bakery() {
                         ].map((item, idx) => (
                             <div
                                 key={idx}
-                                className={`group relative aspect-square w-[calc(50%-12px)] md:w-[calc(25%-18px)] lg:w-[calc(20%-20px)] rounded-[2rem] overflow-hidden bg-white shadow-xl transition-all duration-1000 delay-${idx * 100} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
+                                className={`group relative aspect-square w-[calc(50%-12px)] md:w-[calc(25%-18px)] lg:w-[calc(20%-20px)] rounded-sm overflow-hidden bg-white shadow-xl transition-all duration-1000 delay-${idx * 100} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
                             >
                                 <img
                                     src={item.src}
                                     alt={item.label}
                                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                                     <span className="font-sans text-[10px] font-black text-white uppercase tracking-widest">{item.label}</span>
                                 </div>
                             </div>

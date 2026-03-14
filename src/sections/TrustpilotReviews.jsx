@@ -30,23 +30,23 @@ const REVIEWS = [
 
 export default function TrustpilotReviews() {
     return (
-        <section id="trustpilot-reviews" className="py-24 bg-charcoal overflow-hidden border-t border-white/5">
+        <section id="trustpilot-reviews" className="py-24 bg-black overflow-hidden border-t border-white/5">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
                 <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-8">
                     <div className="text-center md:text-left">
-                        <div className="flex items-center justify-center md:justify-start gap-3 mb-6 text-emerald-500">
+                        <div className="flex items-center justify-center md:justify-start gap-3 mb-6 text-white">
                             <FaStar size={24} />
                             <span className="font-sans text-xs font-black uppercase tracking-[0.4em] text-white">Trustpilot Reviews</span>
                         </div>
                         <h2 className="font-serif font-black text-4xl md:text-6xl text-white leading-tight">
-                            Excellence <span className="text-emerald-500 italic font-medium">Verified</span> <br /> by the Community.
+                            Excellence <span className="text-white italic font-normal opacity-70">Verified</span> <br /> by the Community.
                         </h2>
                     </div>
 
                     <div className="glass-card p-8 border border-white/10 flex flex-col items-center md:items-start bg-white/5">
                         <div className="flex gap-1 mb-2">
                             {[1, 2, 3, 4, 5].map(i => (
-                                <HiStar key={i} className="text-emerald-500" size={24} />
+                                <HiStar key={i} className="text-white" size={24} />
                             ))}
                         </div>
                         <div className="text-white font-sans">
@@ -58,10 +58,10 @@ export default function TrustpilotReviews() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {REVIEWS.map((review, idx) => (
-                        <div key={idx} className="glass-card p-8 border border-white/5 hover:border-emerald-500/20 transition-all duration-500 group flex flex-col bg-white/5">
+                        <div key={idx} className="glass-card p-8 border border-white/5 hover:border-white/20 transition-all duration-500 group flex flex-col bg-white/5">
                             <div className="flex gap-1 mb-6">
                                 {[...Array(5)].map((_, i) => (
-                                    <div key={i} className={`p-1 ${i < review.rating ? 'bg-emerald-500' : 'bg-white/10'}`}>
+                                    <div key={i} className={`p-1 ${i < review.rating ? 'bg-white' : 'bg-white/10'}`}>
                                         <FaStar className="text-white" size={10} />
                                     </div>
                                 ))}
@@ -74,7 +74,7 @@ export default function TrustpilotReviews() {
                                     <h4 className="font-serif font-bold text-white">{review.author}</h4>
                                     <span className="text-[10px] text-white/40 uppercase font-black tracking-widest">{review.date}</span>
                                 </div>
-                                <div className="text-emerald-500 opacity-50 font-sans font-black text-[10px] tracking-tighter">
+                                <div className="text-white opacity-50 font-sans font-black text-[10px] tracking-tighter">
                                     TRUSTPILOT
                                 </div>
                             </div>
@@ -87,7 +87,7 @@ export default function TrustpilotReviews() {
                         href="https://www.trustpilot.com/review/mybathandbiscuits.com"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-emerald-500 font-black uppercase text-[10px] tracking-[0.3em] hover:tracking-[0.5em] transition-all"
+                        className="text-white font-black uppercase text-[10px] tracking-[0.3em] hover:tracking-[0.5em] transition-all"
                     >
                         View All Trustpilot Reviews →
                     </a>

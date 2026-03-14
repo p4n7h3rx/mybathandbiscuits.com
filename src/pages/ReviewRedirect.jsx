@@ -23,10 +23,10 @@ export default function ReviewRedirect() {
     }, [rating])
 
     return (
-        <section className="min-h-screen pt-32 pb-24 bg-[#FDF8F0] flex items-center justify-center overflow-hidden relative">
+        <section className="min-h-screen pt-32 pb-24 bg-white flex items-center justify-center overflow-hidden relative">
             {/* Background Decorative Elements */}
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-5">
-                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[30rem] font-serif font-black text-charcoal/20 whitespace-nowrap rotate-12">
+                <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[30rem] font-serif font-black text-black/20 whitespace-nowrap rotate-12">
                     FEEDBACK
                 </span>
             </div>
@@ -39,14 +39,14 @@ export default function ReviewRedirect() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
-                            className="glass-card p-12 md:p-16 border border-sage/20 text-center shadow-[0_64px_120px_-32px_rgba(26,26,26,0.1)]"
+                            className="bg-white p-12 md:p-16 border border-black/10 text-center shadow-[0_64px_120px_-32px_rgba(26,26,26,0.1)] rounded-sm"
                         >
-                            <div className="w-20 h-20 rounded-3xl bg-sage/5 flex items-center justify-center text-sage mx-auto mb-10 border border-sage/10">
-                                <HiHeart size={40} />
+                            <div className="w-20 h-20 rounded-sm bg-black/5 flex items-center justify-center text-black mx-auto mb-10 border border-black/10">
+                                <HiStar size={40} />
                             </div>
 
-                            <h1 className="font-serif font-black text-4xl text-charcoal mb-6 leading-tight">
-                                How was your <br /> <span className="text-sage italic font-medium">Experience?</span>
+                            <h1 className="font-serif font-black text-4xl text-black mb-6 leading-tight">
+                                How was your <br /> <span className="text-black italic font-normal opacity-70">Experience?</span>
                             </h1>
                             <p className="font-sans text-slate mb-12 leading-relaxed">
                                 Your feedback helps us maintain the elite standard of care your pet deserves. Please select a rating below.
@@ -63,7 +63,7 @@ export default function ReviewRedirect() {
                                     >
                                         <HiStar
                                             size={48}
-                                            className={`transition-colors duration-300 ${(hover || rating) >= star ? 'text-gold' : 'text-charcoal/5'
+                                            className={`transition-colors duration-300 ${(hover || rating) >= star ? 'text-black' : 'text-black/5'
                                                 }`}
                                         />
                                     </button>
@@ -79,14 +79,14 @@ export default function ReviewRedirect() {
                             key="thanks-step"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            className="glass-card p-12 md:p-16 border border-sage/20 text-center shadow-[0_64px_120px_-32px_rgba(26,26,26,0.1)]"
+                            className="bg-white p-12 md:p-16 border border-black/10 text-center shadow-[0_64px_120px_-32px_rgba(26,26,26,0.1)] rounded-sm"
                         >
-                            <div className="w-20 h-20 rounded-3xl bg-sage/5 flex items-center justify-center text-sage mx-auto mb-10 border border-sage/10">
+                            <div className="w-20 h-20 rounded-sm bg-black/5 flex items-center justify-center text-black mx-auto mb-10 border border-black/10">
                                 <HiEmojiHappy size={40} />
                             </div>
 
-                            <h2 className="font-serif font-black text-4xl text-charcoal mb-6 leading-tight">
-                                Thank You for <br /> <span className="text-sage italic font-medium">Your Feedback.</span>
+                            <h2 className="font-serif font-black text-4xl text-black mb-6 leading-tight">
+                                Thank You for <br /> <span className="text-black italic font-normal opacity-70">Your Feedback.</span>
                             </h2>
                             <p className="font-sans text-slate mb-12 leading-relaxed">
                                 We sincerely appreciate your honesty. Our management team will review your comments to ensure we continue providing Licking County's premier pet experience.
@@ -104,23 +104,23 @@ export default function ReviewRedirect() {
                             key="redirecting-step"
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
-                            className="glass-card p-12 md:p-16 border border-sage/20 text-center shadow-[0_64px_120px_-32px_rgba(26,26,26,0.1)]"
+                            className="bg-white p-12 md:p-16 border border-black/10 text-center shadow-[0_64px_120px_-32px_rgba(26,26,26,0.1)] rounded-sm"
                         >
-                            <div className="w-20 h-20 rounded-3xl bg-sage/5 flex items-center justify-center text-sage mx-auto mb-10 border border-sage/10">
+                            <div className="w-20 h-20 rounded-sm bg-black/5 flex items-center justify-center text-black mx-auto mb-10 border border-black/10">
                                 <FaGoogle size={32} />
                             </div>
 
-                            <h2 className="font-serif font-black text-3xl text-charcoal mb-6 leading-tight">
-                                Sharing Your <br /> <span className="text-sage italic font-medium">5-Star Story.</span>
+                            <h2 className="font-serif font-black text-3xl text-black mb-6 leading-tight">
+                                Sharing Your <br /> <span className="text-black italic font-normal opacity-70">5-Star Story.</span>
                             </h2>
                             <p className="font-sans text-slate mb-10 leading-relaxed">
                                 We are thrilled you had a great experience! Redirecting you to Google to share your review with the community...
                             </p>
 
                             <div className="flex items-center justify-center gap-2">
-                                <div className="w-2 h-2 rounded-full bg-sage animate-bounce [animation-delay:-0.3s]" />
-                                <div className="w-2 h-2 rounded-full bg-sage animate-bounce [animation-delay:-0.15s]" />
-                                <div className="w-2 h-2 rounded-full bg-sage animate-bounce" />
+                                <div className="w-2 h-2 rounded-full bg-black animate-bounce [animation-delay:-0.3s]" />
+                                <div className="w-2 h-2 rounded-full bg-black animate-bounce [animation-delay:-0.15s]" />
+                                <div className="w-2 h-2 rounded-full bg-black animate-bounce" />
                             </div>
                         </motion.div>
                     )}

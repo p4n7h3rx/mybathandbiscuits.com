@@ -17,9 +17,9 @@
   }
 
   body {
-    font-family: 'DM Sans', system-ui, sans-serif;
-    color: #2D2D2D;
-    background-color: #FDF8F0;
+    font-family: 'Lora', serif;
+    color: #000000;
+    background-color: #FFFFFF;
     overflow-x: hidden;
   }
 
@@ -29,9 +29,10 @@
   h4,
   h5,
   h6 {
-    font-family: 'Playfair Display', Georgia, serif;
-    letter-spacing: -0.02em;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -0.01em;
     line-height: 1.1;
+    color: #000000;
   }
 
   p {
@@ -40,8 +41,8 @@
   }
 
   ::selection {
-    background-color: #A8C686;
-    color: #FEFCF7;
+    background-color: #303342;
+    color: #FFFFFF;
   }
 }
 
@@ -65,7 +66,7 @@
 
   .nav-link::after {
     content: '';
-    @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-sage transition-all duration-300 rounded-full;
+    @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-300 rounded-sm;
   }
 
   .nav-link:hover::after {
@@ -80,15 +81,12 @@
     border-radius: 2rem;
   }
 
-  .gold-gradient {
-    background: linear-gradient(135deg, #C9A96E 0%, #A8873D 100%);
+  .heritage-dark-gradient {
+    background: #000000;
   }
 
-  .gold-text {
-    background: linear-gradient(135deg, #C9A96E 0%, #DFC089 50%, #A8873D 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .heritage-text {
+    @apply text-black;
   }
 
   .section-padding {
@@ -96,25 +94,24 @@
   }
 
   .warm-gradient {
-    background: linear-gradient(180deg, #FDF8F0 0%, #F5E6D3 100%);
+    background: #FFFFFF;
   }
 
-  .blush-gradient {
-    background: linear-gradient(180deg, #FDF8F0 0%, #F5E0D8 50%, #E8C4B8 100%);
+  .heritage-light-gradient {
+    background: #FFFFFF;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center px-10 py-5 font-sans font-bold text-warm-white text-sm tracking-widest uppercase rounded-full bg-charcoal hover:bg-sage hover:shadow-2xl hover:shadow-sage/20 hover:-translate-y-1 cursor-pointer;
-    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    @apply inline-flex items-center justify-center px-10 py-5 font-sans font-bold text-white text-sm tracking-widest uppercase rounded-sm bg-black hover:bg-[#303342] hover:shadow-2xl transition-all duration-500 cursor-pointer;
   }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center px-8 py-4 font-sans font-semibold text-gold text-base rounded-full border-2 border-gold bg-transparent hover:bg-gold hover:text-warm-white hover:scale-105 cursor-pointer;
-    transition: transform 0.3s ease-out, background-color 0.3s ease-out, color 0.3s ease-out;
+    @apply inline-flex items-center justify-center px-8 py-4 font-sans font-semibold text-black text-base rounded-sm border-[1.5px] border-black bg-transparent hover:bg-black hover:text-white cursor-pointer;
+    transition: all 0.3s ease-out;
   }
 
   .btn-ghost {
-    @apply inline-flex items-center justify-center px-6 py-3 font-sans font-medium text-charcoal text-sm rounded-full hover:bg-champagne cursor-pointer;
+    @apply inline-flex items-center justify-center px-6 py-3 font-sans font-medium text-black text-sm rounded-sm hover:bg-gray-100 cursor-pointer;
     transition: background-color 0.3s ease-out;
   }
 }
@@ -143,16 +140,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #FDF8F0;
+  background: #FFFFFF;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C9A96E;
+  background: #000000;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #A8873D;
+  background: #000000;
 }
 
 /* Lenis smooth scroll */

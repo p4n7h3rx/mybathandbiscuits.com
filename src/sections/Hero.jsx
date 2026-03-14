@@ -9,7 +9,7 @@ function CSSFallbackBubbles() {
             {Array.from({ length: 15 }).map((_, i) => (
                 <div
                     key={i}
-                    className="absolute rounded-full bg-gold/10 animate-float"
+                    className="absolute rounded-full bg-white/10 animate-float"
                     style={{
                         width: `${20 + Math.random() * 60}px`,
                         height: `${20 + Math.random() * 60}px`,
@@ -34,13 +34,13 @@ function hasWebGL() {
 }
 
 export default function Hero({
-    badge = "Since 2009 · Licking County",
-    titleLine1 = "Professional Grooming for",
-    titleLine2 = "Dogs & Cats in Licking County",
-    subtitle = "Where experienced hands, gentle handling, and thoughtful care come together to keep pets healthy, comfortable, and looking their best.",
+    badge = "Registered Veterinary Technician · Since 2009",
+    titleLine1 = "Elevating Pet Care to a",
+    titleLine2 = "Class Above the Rest",
+    subtitle = "Professional dog and cat grooming in Newark, Ohio led by Danielle Wilson, RVT. Where medical expertise meets a gentle, compassionate touch.",
     videoSrc = "/images/Video-1.mp4",
-    primaryCTA = { text: "Book Appointment", href: "https://pawpartner.com/pz/book?p=237080" },
-    secondaryCTA = { text: "Explore Services", href: "#services", onClick: null }
+    primaryCTA = { text: "Book an Appointment", href: "https://pawpartner.com/pz/book?p=237080" },
+    secondaryCTA = { text: "Our Services", href: "#services", onClick: null }
 }) {
     const videoRef = useRef(null)
     const bookBtnRef = useMagnetic()
@@ -89,12 +89,12 @@ export default function Hero({
         <section
             id="hero"
             className="relative min-h-screen w-full flex items-center justify-center overflow-hidden"
-            style={{ background: 'linear-gradient(180deg, #FDF8F0 0%, #F5E6D3 60%, #FDF8F0 100%)' }}
+            style={{ background: '#000000' }}
         >
             {/* Cinematic Video Background with Multi-Layer Overlays */}
-            <div className="absolute inset-0 z-0 overflow-hidden bg-charcoal">
-                <div className="absolute inset-0 bg-charcoal/60 z-10" />
-                <div className="absolute inset-0 bg-gradient-to-b from-charcoal/20 via-transparent to-[#FDF8F0] z-20" />
+            <div className="absolute inset-0 z-0 overflow-hidden bg-black">
+                <div className="absolute inset-0 bg-black/70 z-10" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black z-20" />
                 <video
                     ref={videoRef}
                     key={videoSrc}
@@ -114,29 +114,29 @@ export default function Hero({
 
                 {/* Tagline badge */}
                 {badge && (
-                    <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 mb-10 mt-8 animate-fade-in-up">
-                        <span className="w-1.5 h-1.5 rounded-full bg-sage animate-pulse" />
-                        <span className="font-sans text-xs font-bold text-warm-white tracking-[0.2em] uppercase">
+                    <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-sm bg-white/5 backdrop-blur-xl border border-white/10 mb-10 mt-8 animate-fade-in-up">
+                        <span className="w-1.5 h-1.5 rounded-full bg-white/40 animate-pulse" />
+                        <span className="font-sans text-[10px] font-black text-white tracking-[0.3em] uppercase">
                             {badge}
                         </span>
                     </div>
                 )}
 
                 {/* Main Heading */}
-                <h1 className="font-serif font-black text-4xl sm:text-6xl md:text-[5.5rem] text-warm-white mb-8 leading-[0.9] tracking-tighter animate-fade-in-up"
+                <h1 className="font-serif font-black text-5xl sm:text-7xl md:text-[6.5rem] text-white mb-8 leading-[0.85] tracking-tight animate-fade-in-up"
                     style={{
                         animationDelay: '0.2s',
-                        textShadow: '0 4px 20px rgba(0, 0, 0, 0.3)'
+                        textShadow: '0 4px 30px rgba(0, 0, 0, 0.5)'
                     }}
                 >
                     {titleLine1} <br />
-                    <span className="text-sage italic font-medium">{titleLine2}</span>
+                    <span className="text-white italic font-normal opacity-90">{titleLine2}</span>
                 </h1>
 
                 {/* Subtitle */}
                 {subtitle && (
                     <p
-                        className="font-sans text-base md:text-xl text-warm-white/90 transform max-w-2xl mx-auto mb-8 md:mb-10 text-balance animate-fade-in-up leading-relaxed"
+                        className="font-sans text-base md:text-xl text-white/80 transform max-w-2xl mx-auto mb-8 md:mb-12 text-balance animate-fade-in-up leading-relaxed font-medium"
                         style={{ animationDelay: '0.4s' }}
                     >
                         {subtitle}
@@ -163,7 +163,7 @@ export default function Hero({
                             ref={exploreBtnRef}
                             href={secondaryCTA.href}
                             onClick={secondaryCTA.onClick || defaultScrollToServices}
-                            className="btn-outline !border-charcoal/20 !text-charcoal hover:!bg-charcoal hover:!text-white group magnetic px-10"
+                            className="btn-outline !border-white/20 !text-white hover:!bg-white hover:!text-black group transition-all duration-500 px-10"
                         >
                             {secondaryCTA.text}
                         </a>

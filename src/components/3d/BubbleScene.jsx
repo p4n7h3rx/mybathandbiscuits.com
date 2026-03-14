@@ -42,7 +42,7 @@ function Bubble({ position, scale, speed, opacity }) {
     )
 }
 
-function GoldenParticles({ count = 60 }) {
+function NeutralParticles({ count = 60 }) {
     const pointsRef = useRef()
     const positions = useMemo(() => {
         const arr = new Float32Array(count * 3)
@@ -71,7 +71,7 @@ function GoldenParticles({ count = 60 }) {
                 />
             </bufferGeometry>
             <pointsMaterial
-                color="#C9A96E"
+                color="#ffffff"
                 size={0.04}
                 transparent
                 opacity={0.7}
@@ -103,7 +103,7 @@ function Scene() {
     return (
         <>
             <Environment preset="studio" />
-            <ambientLight intensity={0.5} color="#FDF8F0" />
+            <ambientLight intensity={0.5} color="#ffffff" />
             <spotLight
                 position={[10, 10, 10]}
                 angle={0.15}
@@ -114,16 +114,16 @@ function Scene() {
             <directionalLight
                 position={[-5, 5, 5]}
                 intensity={0.5}
-                color="#C9A96E"
+                color="#ffffff"
             />
 
             {bubbles.map((b) => (
                 <Bubble key={b.id} {...b} />
             ))}
 
-            <GoldenParticles count={80} />
+            <NeutralParticles count={80} />
 
-            <fog attach="fog" args={['#FDF8F0', 8, 20]} />
+            <fog attach="fog" args={['#ffffff', 8, 20]} />
         </>
     )
 }

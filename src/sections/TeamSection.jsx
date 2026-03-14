@@ -61,14 +61,14 @@ export default function TeamSection() {
     }, [])
 
     return (
-        <section ref={sectionRef} id="team" className="py-24 md:py-32 bg-cream overflow-hidden">
+        <section ref={sectionRef} id="team" className="py-24 md:py-32 bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
                 <div className="text-center mb-20">
-                    <span className="font-sans text-xs font-bold text-sage tracking-[0.4em] uppercase mb-6 block">The Elite Crew</span>
-                    <h2 className="font-serif font-black text-4xl md:text-5xl text-charcoal mb-8 leading-tight">
-                        Meet Your Pet's <br /> <span className="text-sage italic font-medium">Wellness Partners.</span>
+                    <span className="font-sans text-[10px] font-black text-black/40 tracking-[0.4em] uppercase mb-6 block">The Elite Crew</span>
+                    <h2 className="font-serif font-black text-4xl md:text-7xl text-black mb-8 leading-[0.9] tracking-tighter">
+                        Meet Your Pet's <br /> <span className="text-black italic font-normal opacity-70">Wellness Partners.</span>
                     </h2>
-                    <p className="font-sans text-slate max-w-2xl mx-auto leading-relaxed">
+                    <p className="font-sans text-black/60 max-w-2xl mx-auto leading-relaxed font-medium">
                         Our team combines years of experience with a genuine love for pets to deliver the most thoughtful grooming experience in Licking County.
                     </p>
                 </div>
@@ -80,25 +80,25 @@ export default function TeamSection() {
                             className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
                             style={{ transitionDelay: `${index * 150}ms` }}
                         >
-                            <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl mb-8 group border border-charcoal/5">
+                            <div className="relative aspect-[4/5] rounded-sm overflow-hidden shadow-[0_48px_80px_-16px_rgba(0,0,0,0.15)] mb-8 group border border-black/5">
                                 <img
                                     src={member.image}
                                     alt={member.name}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-charcoal/5 to-transparent opacity-40 group-hover:opacity-20 transition-opacity duration-500" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/5 to-transparent opacity-40 group-hover:opacity-20 transition-opacity duration-500" />
 
                                 <div className="absolute bottom-8 left-8 right-8">
-                                    <span className="font-sans text-[9px] font-black text-white/90 uppercase tracking-[0.2em] bg-sage/80 backdrop-blur-md px-4 py-1.5 rounded-full inline-block mb-3 border border-white/10">
+                                    <span className="font-sans text-[9px] font-black text-white/90 uppercase tracking-[0.2em] bg-black/80 backdrop-blur-md px-4 py-1.5 rounded-sm inline-block mb-3 border border-white/10">
                                         {member.credentials}
                                     </span>
                                 </div>
                             </div>
 
                             <div className="px-2">
-                                <h3 className="font-serif font-bold text-2xl text-charcoal mb-2">{member.name}</h3>
-                                <p className="font-sans text-[10px] font-black text-sage tracking-[0.2em] uppercase mb-4">{member.role}</p>
-                                <p className="font-sans text-sm text-slate leading-relaxed opacity-70">
+                                <h3 className="font-serif font-black text-2xl text-black mb-2 tracking-tight">{member.name}</h3>
+                                <p className="font-sans text-[10px] font-black text-black/40 tracking-[0.2em] uppercase mb-4">{member.role}</p>
+                                <p className="font-sans text-sm text-black/60 leading-relaxed font-medium opacity-100">
                                     {member.bio}
                                 </p>
                             </div>

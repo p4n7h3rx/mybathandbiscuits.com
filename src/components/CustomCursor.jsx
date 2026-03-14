@@ -27,14 +27,14 @@ export default function CustomCursor() {
 
     return (
         <motion.div
-            className="fixed top-0 left-0 w-8 h-8 border border-sage/60 rounded-full pointer-events-none z-[100]"
+            className="fixed top-0 left-0 w-8 h-8 border border-white/40 rounded-full pointer-events-none z-[100]"
             style={{
                 x,
                 y,
                 translateX: '-50%',
                 translateY: '-50%',
                 scale: isPointer ? 1.5 : 1,
-                backgroundColor: isHovered ? 'rgba(168, 198, 134, 0.4)' : 'rgba(255, 255, 255, 0.1)',
+                backgroundColor: isHovered ? 'rgba(0, 0, 0, 0.4)' : 'rgba(255, 255, 255, 0.1)',
                 backdropFilter: isHovered ? 'blur(4px)' : 'none'
             }}
         />

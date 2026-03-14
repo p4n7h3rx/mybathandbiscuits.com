@@ -26,19 +26,19 @@ export default function AboutPage() {
     return (
         <>
             <Hero
-                badge="Winner: America's Coolest 2024"
+                badge="Registered Veterinary Technician · Since 2009"
                 titleLine1="Our Heart for"
                 titleLine2="Thoughtful Care"
                 subtitle="From our Granville roots to our new home in Newark, discover the dedicated passion behind Bath & Biscuits."
                 videoSrc="/images/hero-2.mp4"
-                primaryCTA={{ text: "Book Appointment", href: "https://pawpartner.com/pz/book?p=237080" }}
+                primaryCTA={{ text: "Book an Appointment", href: "https://pawpartner.com/pz/book?p=237080" }}
                 secondaryCTA={{ text: "Meet the Team", href: "#about" }}
             />
             <AboutSection />
             <SignatureMemories />
             <TeamSection />
 
-            <section className="py-24 bg-charcoal text-white">
+            <section className="py-24 bg-black text-white">
                 <div className="max-w-7xl mx-auto px-6 md:px-12">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
                         {[
@@ -46,10 +46,10 @@ export default function AboutPage() {
                             { title: "Care & Comfort", text: "We prioritize gentle handling and thoughtful care for every pet on our table." },
                             { title: "Community Roots", text: "Proudly serving the Licking County community and beyond since 2009." }
                         ].map((item, idx) => (
-                            <div key={idx} className="p-8 rounded-[2rem] bg-white/5 border border-white/10">
-                                <span className="text-sage text-2xl font-serif block mb-4">0{idx + 1}</span>
-                                <h3 className="font-serif font-bold text-xl mb-4">{item.title}</h3>
-                                <p className="font-sans text-sm text-white/60 leading-relaxed">{item.text}</p>
+                            <div key={idx} className="p-8 rounded-sm bg-white/5 border border-white/10">
+                                <span className="text-white/40 text-2xl font-serif block mb-4">0{idx + 1}</span>
+                                <h3 className="font-serif font-black text-xl mb-4 text-white">{item.title}</h3>
+                                <p className="font-sans text-sm text-white/60 leading-relaxed font-medium">{item.text}</p>
                             </div>
                         ))}
                     </div>

@@ -24,17 +24,17 @@ export default function Footer() {
     const trustpilotRef = useMagnetic()
 
     return (
-        <footer className="bg-charcoal text-white/40 pt-32 pb-12 overflow-hidden">
+        <footer className="bg-black text-white/40 pt-32 pb-12 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-16 mb-24">
                     {/* Brand Meta */}
                     <div className="md:col-span-5">
                         <div className="mb-10">
-                            <div className="h-20 w-20 bg-charcoal rounded-full p-2 shadow-2xl ring-1 ring-white/10 mb-6 flex items-center justify-center overflow-hidden transition-transform duration-500 hover:scale-105">
+                            <div className="h-20 w-20 bg-black rounded-sm p-2 shadow-2xl ring-1 ring-white/10 mb-6 flex items-center justify-center overflow-hidden transition-transform duration-500 hover:scale-105">
                                 <img
                                     src="/images/BB.png"
                                     alt="Bath & Biscuits"
-                                    className="h-full w-full object-contain opacity-90"
+                                    className="h-full w-full object-contain opacity-90 brightness-0 invert"
                                 />
                             </div>
                         </div>
@@ -45,7 +45,7 @@ export default function Footer() {
                             <a
                                 ref={igRef}
                                 href="https://www.instagram.com/bathnbiscuits"
-                                className="text-white/20 hover:text-sage transition-colors magnetic"
+                                className="text-white/20 hover:text-white transition-colors"
                             >
                                 <FaInstagram size={18} />
                             </a>
@@ -54,7 +54,7 @@ export default function Footer() {
                                 href="https://www.facebook.com/bathnbiscuits"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-white/20 hover:text-sage transition-colors magnetic"
+                                className="text-white/20 hover:text-white transition-colors"
                             >
                                 <FaFacebookF size={16} />
                             </a>
@@ -63,7 +63,7 @@ export default function Footer() {
                                 href="https://maps.app.goo.gl/VrhQ2gPsB4kPxgLn7"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-white/20 hover:text-sage transition-colors magnetic"
+                                className="text-white/20 hover:text-white transition-colors"
                                 title="Google Business Profile"
                             >
                                 <FaGoogle size={16} />
@@ -73,7 +73,7 @@ export default function Footer() {
                                 href="https://www.trustpilot.com/review/mybathandbiscuits.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-white/20 hover:text-sage transition-colors magnetic"
+                                className="text-white/20 hover:text-white transition-colors"
                                 title="Trustpilot"
                             >
                                 <FaStar size={18} />
@@ -147,7 +147,7 @@ export default function Footer() {
 
                     <a
                         href="https://barkboostsolutions.com"
-                        className="font-sans text-[9px] font-black text-white/10 hover:text-sage uppercase tracking-[0.5em] transition-colors"
+                        className="font-sans text-[9px] font-black text-white/5 hover:text-white uppercase tracking-[0.5em] transition-colors"
                     >
                         Made By Bark Boost Solution
                     </a>
