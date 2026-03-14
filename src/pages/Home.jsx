@@ -1,4 +1,5 @@
 import Hero from '../sections/Hero'
+import BakeryWelcome from '../sections/BakeryWelcome'
 import Services from '../sections/Services'
 import TheraClean from '../sections/TheraClean'
 import Community from '../sections/Community'
@@ -26,7 +27,7 @@ export default function Home() {
                 primaryCTA={{ text: "Book Appointment", href: "https://pawpartner.com/pz/book?p=237080" }}
                 secondaryCTA={{ text: "Explore Grooming", href: "#services" }}
             />
-            <Bakery />
+            <BakeryWelcome />
             <Services />
             <TheraClean />
             <Community />

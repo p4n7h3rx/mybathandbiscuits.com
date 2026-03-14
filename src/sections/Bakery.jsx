@@ -140,7 +140,12 @@ export default function Bakery() {
                             { src: "/images/cake.webp", label: "Custom Cakes" },
                             { src: "/images/Cookies-2.webp", label: "Seasonal Shapes" },
                             { src: "/images/bakery-dog-treats-1.webp", label: "Grain-Free Bites" },
-                            { src: "/images/toys.webp", label: "Curated Toys" }
+                            { src: "/images/toys.webp", label: "Curated Toys" },
+                            { src: "/images/bakery-2.webp", label: "Fresh Batches" },
+                            { src: "/images/bakery-3.webp", label: "Heritage Collection" },
+                            { src: "/images/bakery-4.webp", label: "Natural Chews" },
+                            { src: "/images/ice cream.webp", label: "Ice Cream Cakes" },
+                            { src: "/images/bakery-6.webp", label: "Boutique Finds" }
                         ].map((item, idx) => (
                             <div
                                 key={idx}
